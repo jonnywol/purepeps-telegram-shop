@@ -731,6 +731,7 @@
     }
 
     function showView(name) {
+      document.getElementById("toast").classList.remove("on");
       document.querySelectorAll(".view").forEach((v) => v.classList.toggle("on", v.dataset.view === name));
       if (name !== "grid") closeCart();
       updateChrome();
@@ -761,11 +762,11 @@
     function renderGrid() {
       const list = filtered();
       const asAt = SOURCE === "snapshot" && FETCHED_AT
-        ? " Prices as at " + formatFetched(FETCHED_AT) + "."
+        ? " Catalogue as at " + formatFetched(FETCHED_AT) + "."
         : SOURCE === "live" ? " Live from the PurePeps store." : "";
       document.getElementById("countLine").textContent =
         (list.length === 1 ? "1 product" : list.length + " products") +
-        (query || category !== "All" ? " in this view." : " in the catalogue.") + asAt;
+        (query || category !== "All" ? " in this view." : ".") + asAt;
       const grid = document.getElementById("grid");
       if (!list.length) {
         grid.innerHTML = '<div class="status" style="grid-column:1/-1">No products match that search.</div>';
