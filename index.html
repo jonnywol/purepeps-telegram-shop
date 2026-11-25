@@ -83,7 +83,7 @@
     header.top {
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 45;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -94,17 +94,24 @@
     }
     .logo-link { display: flex; align-items: center; }
     .logo-link img { height: 26px; width: auto; }
-    .preview-chip {
+    .header-back {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 0 2px 0 0;
+      color: var(--black);
       font-family: var(--font-body);
-      font-size: 9px;
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text);
-      border: 1px solid var(--line);
-      border-radius: 2px;
-      padding: 3px 7px;
+      letter-spacing: 0;
+      line-height: 1;
+      background: none;
+      cursor: pointer;
     }
+    .header-back svg { width: 20px; height: 20px; flex: 0 0 auto; }
+    .top.has-back .header-back { display: inline-flex; }
+    .top.has-back .logo-link { display: none; }
     .spacer { flex: 1; }
     .icon-btn {
       width: 40px;
@@ -312,16 +319,22 @@
     }
     .card.oos .card-cta { color: var(--text); }
 
-    .back-row { display: flex; align-items: center; gap: 8px; margin: 8px 0 16px; }
+    .back-row { display: none; }
     .back-row button {
-      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--black);
       font-family: var(--font-body);
       font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 6px 0;
+      font-size: 14px;
+      letter-spacing: 0;
+      text-transform: none;
+      padding: 8px 0;
+      background: none;
+      cursor: pointer;
     }
+    .back-row button svg { width: 18px; height: 18px; flex: 0 0 auto; }
     .detail-plate {
       background: #fff;
       display: grid;
@@ -446,6 +459,16 @@
       color: var(--black);
       border: 1px solid var(--black);
     }
+    .btn-secondary {
+      background: #fff;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+    .btn-secondary:active { background: #e8f6f8; }
+    .continue-shop { margin: 12px 0 4px; }
+    .continue-shop + .empty { padding: 20px 10px 8px; }
+    .empty + .continue-shop { margin: 8px 0 16px; }
+    .line + .continue-shop { margin: 16px 0 8px; }
     .btn[disabled] { opacity: 0.45; cursor: not-allowed; }
     .oos-note {
       background: #f7f7f7;
@@ -710,8 +733,11 @@
 <body>
   <div class="app" id="app">
     <header class="top">
+      <button type="button" class="header-back" id="headerBack">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        Back to shop
+      </button>
       <a class="logo-link" href="#shop" aria-label="PurePeps"><img src="images/logo-site.png" alt="PurePeps"></a>
-      <span class="preview-chip">Preview</span>
       <div class="spacer"></div>
       <button class="icon-btn" id="cartBtn" type="button" aria-label="Open cart">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -736,12 +762,12 @@
       </section>
 
       <section class="view" id="view-detail" data-view="detail">
-        <div class="back-row"><button type="button" id="backToGrid">Back to shop</button></div>
+        <div class="back-row"><button type="button" id="backToGrid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> Back to shop</button></div>
         <div class="detail" id="detail"></div>
       </section>
 
       <section class="view" id="view-checkout" data-view="checkout">
-        <div class="back-row"><button type="button" id="backFromCheckout">Back to shop</button></div>
+        <div class="back-row"><button type="button" id="backFromCheckout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> Back to shop</button></div>
         <div class="confirm" id="confirm"></div>
       </section>
     </main>
@@ -936,6 +962,31 @@
       else window.open(url, "_blank", "noopener");
     }
 
+    function currentView() {
+      const on = document.querySelector(".view.on");
+      return on ? on.dataset.view : "grid";
+    }
+    function cartIsOpen() {
+      return document.getElementById("drawer").classList.contains("on");
+    }
+    function goBackToShop() {
+      closeCart();
+      showView("grid");
+      history.replaceState(null, "", "#shop");
+    }
+    function handleTelegramBack() {
+      if (cartIsOpen()) { closeCart(); return; }
+      if (currentView() !== "grid") goBackToShop();
+    }
+    function syncBackButton() {
+      const away = currentView() !== "grid" || cartIsOpen();
+      document.querySelector(".top").classList.toggle("has-back", away);
+      if (!tg || !tg.BackButton) return;
+      try {
+        if (away) tg.BackButton.show();
+        else tg.BackButton.hide();
+      } catch (e) {}
+    }
     function showView(name) {
       document.getElementById("toast").classList.remove("on");
       document.querySelectorAll(".view").forEach((v) => v.classList.toggle("on", v.dataset.view === name));
@@ -1084,12 +1135,13 @@
     function renderCart() {
       const body = document.getElementById("cartBody");
       const foot = document.getElementById("cartFoot");
+      const continueBtn = '<button class="btn btn-secondary continue-shop" type="button">Continue shopping</button>';
       if (!cart.length) {
-        body.innerHTML = '<div class="empty">Your cart is empty.</div>';
+        body.innerHTML = continueBtn + '<div class="empty">Your cart is empty.</div>' + continueBtn;
         foot.innerHTML = "";
         return;
       }
-      body.innerHTML = cart.map((i) => `
+      body.innerHTML = continueBtn + cart.map((i) => `
         <div class="line">
           <div class="thumb">${i.image ? `<img src="${i.image}" alt="">` : ""}</div>
           <div>
@@ -1106,7 +1158,7 @@
             <button class="remove" type="button" data-remove="${i.cartId}">Remove</button>
           </div>
         </div>
-      `).join("");
+      `).join("") + continueBtn;
       foot.innerHTML = `
         <div class="tot"><span>Total</span><b>${money(cartTotal())}</b></div>
         <button class="btn btn-primary" type="button" id="drawerCheckout">Checkout</button>
@@ -1175,10 +1227,12 @@
       renderCart();
       document.getElementById("drawer").classList.add("on");
       document.getElementById("drawerBg").classList.add("on");
+      updateChrome();
     }
     function closeCart() {
       document.getElementById("drawer").classList.remove("on");
       document.getElementById("drawerBg").classList.remove("on");
+      updateChrome();
     }
     function updateChrome() {
       const n = cartCount();
@@ -1191,6 +1245,7 @@
       document.getElementById("stickyCount").textContent = n === 1 ? "1 item" : n + " items";
       document.getElementById("stickyTotal").textContent = money(cartTotal());
       syncMainButton();
+      syncBackButton();
     }
     function syncMainButton() {
       if (!tg || !tg.MainButton) return;
@@ -1285,11 +1340,15 @@
         } else toast("Copy the link above");
       }
     });
-    document.getElementById("backToGrid").addEventListener("click", () => { showView("grid"); history.replaceState(null, "", "#shop"); });
-    document.getElementById("backFromCheckout").addEventListener("click", () => { showView("grid"); history.replaceState(null, "", "#shop"); });
+    document.getElementById("headerBack").addEventListener("click", goBackToShop);
+    document.getElementById("backToGrid").addEventListener("click", goBackToShop);
+    document.getElementById("backFromCheckout").addEventListener("click", goBackToShop);
     document.getElementById("cartBtn").addEventListener("click", openCart);
     document.getElementById("closeCart").addEventListener("click", closeCart);
     document.getElementById("drawerBg").addEventListener("click", closeCart);
+    document.getElementById("drawer").addEventListener("click", (e) => {
+      if (e.target.closest(".continue-shop")) goBackToShop();
+    });
     document.getElementById("stickyCheckout").addEventListener("click", openCheckout);
 
     if (tg) {
@@ -1309,6 +1368,10 @@
             if (url) openExternal(url);
           } else openCheckout();
         });
+      }
+      if (tg.BackButton) {
+        tg.BackButton.onClick(handleTelegramBack);
+        syncBackButton();
       }
     }
 
