@@ -1,0 +1,3701 @@
+{
+  "source": "https://purepeps.com.au/wp-json/wc/store/v1/products",
+  "store": "https://purepeps.com.au",
+  "fetched": "2026-11-25T11:42:21+11:00",
+  "currency": "AUD",
+  "liveApiBlockedByCors": true,
+  "note": "Snapshot of published products from the public WooCommerce Store API. The API does not send Access-Control-Allow-Origin, so the shop page cannot read it live from GitHub Pages. Rerun this script to refresh. Prices were not invented.",
+  "count": 119,
+  "products": [
+    {
+      "id": 3933,
+      "name": "5-AMINO-1MQ - 10 Pack",
+      "officialName": "5-AMINO-1MQ - 10 Pack",
+      "slug": "5-amino-1mq-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/5-amino-1mq-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/5-Amino-1mq-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 480.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3934,
+          "label": "Labelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/5-Amino-1mq-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/5-amino-1mq-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 3935,
+          "label": "Unlabelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/5-Amino-1mq-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/5-amino-1mq-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 480.0
+    },
+    {
+      "id": 2544,
+      "name": "5-Amino-1MQ 50MG",
+      "officialName": "5-Amino-1MQ 50MG",
+      "slug": "5-amino-1mq",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/5-amino-1mq/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/5Amino1MQ-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3008,
+      "name": "ACETIC ACID WATER",
+      "officialName": "ACETIC ACID WATER",
+      "slug": "acetic-water-copy",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/acetic-water-copy/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Acetic-Acid-Water-0.6-3ML.jpg",
+      "categories": [
+        "Accessories & Essentials",
+        "Peptides"
+      ],
+      "price": 5.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3326,
+          "label": "3ml",
+          "price": 5.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Acetic-Acid-Water-0.6-3ML.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/acetic-water-copy/?attribute_ml=3ml"
+        },
+        {
+          "id": 3009,
+          "label": "10ml",
+          "price": 10.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Acetic-Water-0.6.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/acetic-water-copy/?attribute_ml=10ml"
+        }
+      ],
+      "maxPrice": 10.0
+    },
+    {
+      "id": 9966,
+      "name": "ADALANK 10MG",
+      "officialName": "ADALANK 10MG",
+      "slug": "adalank-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/adalank-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/ADALANK-10MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 54551,
+      "name": "ADALANK 10MG - 10 Pack",
+      "officialName": "ADALANK 10MG - 10 Pack",
+      "slug": "adalank-10mg-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/adalank-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Adalank-10mg-10-pack.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 600.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 8788,
+      "name": "ADAMAX 10MG",
+      "officialName": "ADAMAX 10MG",
+      "slug": "adamax-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/adamax-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/ADAMAX-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 54563,
+      "name": "ADAMAX 10MG - 10 Pack",
+      "officialName": "ADAMAX 10MG - 10 Pack",
+      "slug": "adamax-10mg-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/adamax-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Adamax-10MG-10pk.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 500.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 16257,
+      "name": "AHK-Cu 100MG",
+      "officialName": "AHK-Cu 100MG",
+      "slug": "ahk-cu-100mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ahk-cu-100mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/07/AHK-Cu-100MG.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 65.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3179,
+      "name": "Alcohol Swabs 100pk",
+      "officialName": "Alcohol Swabs 100pk",
+      "slug": "mini-alcohol-swabs-100pk",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/mini-alcohol-swabs-100pk/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/LIV-Alcohol-Swabs-1.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 7.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2564,
+      "name": "AOD-9604 5MG",
+      "officialName": "AOD-9604 5MG",
+      "slug": "aod-9604",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/aod-9604/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/AOD-9604-Website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 90.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7696,
+      "name": "AOD-9604 5MG - 10 Pack",
+      "officialName": "AOD-9604 5MG - 10 Pack",
+      "slug": "aod-9604-5mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/aod-9604-5mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/AOD-9604-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 540.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7697,
+          "label": "Labelled",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/AOD-9604-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/aod-9604-5mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7698,
+          "label": "Unlabelled",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/AOD-9604-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/aod-9604-5mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 540.0
+    },
+    {
+      "id": 2604,
+      "name": "BAC WATER",
+      "officialName": "BAC WATER",
+      "slug": "bac-water",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/bac-water/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BAC-WATER-10ML-3.jpg",
+      "categories": [
+        "Accessories & Essentials",
+        "Peptides"
+      ],
+      "price": 11.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 61477,
+          "label": "3ml",
+          "price": 11.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BAC-WATER-10ML-3.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bac-water/?attribute_ml=3ml"
+        },
+        {
+          "id": 61479,
+          "label": "10ml",
+          "price": 22.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BAC-WATER-10ML-3.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bac-water/?attribute_ml=10ml"
+        }
+      ],
+      "maxPrice": 22.0
+    },
+    {
+      "id": 61736,
+      "name": "BAC WATER - 10 Pack",
+      "officialName": "BAC WATER - 10 Pack",
+      "slug": "bac-water-10pk",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/bac-water-10pk/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/PurePeps-BAC-Water-10-Pack.png",
+      "categories": [
+        "Accessories & Essentials",
+        "Bulk Peptide Packs"
+      ],
+      "price": 80.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 61738,
+          "label": "3ml",
+          "price": 80.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/11/PurePeps-BAC-Water-10-Pack.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bac-water-10pk/?attribute_ml=3ml"
+        },
+        {
+          "id": 61740,
+          "label": "10ml",
+          "price": 160.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/11/PurePeps-BAC-Water-10-Pack.png",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bac-water-10pk/?attribute_ml=10ml"
+        }
+      ],
+      "maxPrice": 160.0
+    },
+    {
+      "id": 3748,
+      "name": "BPC + TB 20MG - 10 Pack",
+      "officialName": "BPC + TB 20MG - 10 Pack",
+      "slug": "bpc-157-tb-500-20mg",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/bpc-157-tb-500-20mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Wolverine-Bulk-Pack-2.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 840.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3750,
+          "label": "Labelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Wolverine-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-tb-500-20mg/?attribute_label=Labelled"
+        },
+        {
+          "id": 3751,
+          "label": "Unlabelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Wolverine-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-tb-500-20mg/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 840.0
+    },
+    {
+      "id": 3001,
+      "name": "BPC-157 + TB-500 20MG",
+      "officialName": "BPC-157 + TB-500 20MG",
+      "slug": "bpc-157-tb-500-20mg-wolverine-stack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/bpc-157-tb-500-20mg-wolverine-stack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/BPC-157TB-500.jpg",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 130.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 6427,
+      "name": "BPC-157 - 10 Pack",
+      "officialName": "BPC-157 - 10 Pack",
+      "slug": "bpc-157-10mg-20mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/bpc-157-10mg-20mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-10mg-Bulk-Pack-1-scaled.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 6431,
+          "label": "Labelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-10MG-Bulk-Pack.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-10mg-20mg-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 6432,
+          "label": "Unlabelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-10mg-20mg-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 6433,
+          "label": "Labelled / 20mg",
+          "price": 660.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-20MG-Bulk-Pack.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-10mg-20mg-10-pack/?attribute_label=Labelled&attribute_strength=20mg"
+        },
+        {
+          "id": 6434,
+          "label": "Unlabelled / 20mg",
+          "price": 660.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157-10mg-20mg-10-pack/?attribute_label=Unlabelled&attribute_strength=20mg"
+        }
+      ],
+      "maxPrice": 660.0
+    },
+    {
+      "id": 2511,
+      "name": "BPC-157 10MG / 20MG",
+      "officialName": "BPC-157 10MG / 20MG",
+      "slug": "bpc-157",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/bpc-157/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BPC-157-10mg-website-1.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2514,
+          "label": "10mg",
+          "price": 70.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BPC-157-10mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157/?attribute_mg=10mg"
+        },
+        {
+          "id": 2996,
+          "label": "20mg",
+          "price": 110.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/BPV-157-20mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/bpc-157/?attribute_mg=20mg"
+        }
+      ],
+      "maxPrice": 110.0
+    },
+    {
+      "id": 7699,
+      "name": "CAGRILINTIDE - 10 Pack",
+      "officialName": "CAGRILINTIDE - 10 Pack",
+      "slug": "cagrilintide-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/cagrilintide-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Cagri-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 750.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7700,
+          "label": "Labelled",
+          "price": 750.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Cagri-10mg-Bulk-Pack.jpg",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cagrilintide-10mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7701,
+          "label": "Unlabelled",
+          "price": 750.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Cagri-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cagrilintide-10mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 750.0
+    },
+    {
+      "id": 5627,
+      "name": "CAGRILINTIDE 10MG",
+      "officialName": "CAGRILINTIDE 10MG",
+      "slug": "cagrilintide-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cagrilintide-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Cagrilintide.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 125.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3031,
+      "name": "CARTALAX 20MG",
+      "officialName": "CARTALAX 20MG",
+      "slug": "cartalax",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cartalax/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Catalax.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3824,
+      "name": "Cartridge Vials - 3ml",
+      "officialName": "Cartridge Vials - 3ml",
+      "slug": "v2-cartridge-vials-3ml",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/v2-cartridge-vials-3ml/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/V2-Cartridge-Vials-3ml-2-1-scaled.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 10.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3830,
+          "label": "5 Pack",
+          "price": 10.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/V2-Cartridge-Vials-3ml-2-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-cartridge-vials-3ml/?attribute_quantity=5+Pack"
+        },
+        {
+          "id": 3831,
+          "label": "10 Pack",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/V2-Cartridge-Vials-3ml-2-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-cartridge-vials-3ml/?attribute_quantity=10+Pack"
+        }
+      ],
+      "maxPrice": 15.0
+    },
+    {
+      "id": 58138,
+      "name": "CBL-514 20MG",
+      "officialName": "CBL-514 20MG",
+      "slug": "cbl-514-20mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cbl-514-20mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/CBL-514-20MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 61717,
+      "name": "CBL-514 20MG - 10 Pack",
+      "officialName": "CBL-514 20MG - 10 Pack",
+      "slug": "cbl-514-20mg-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cbl-514-20mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/CBL-514-20MG-10-pack.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 500.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2579,
+      "name": "CEREBROLYSIN 60MG",
+      "officialName": "CEREBROLYSIN 60MG",
+      "slug": "cerebrolysin",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cerebrolysin/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Cerebrolysin-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 12583,
+      "name": "CEREBROLYSIN 60MG - 10 Pack",
+      "officialName": "CEREBROLYSIN 60MG - 10 Pack",
+      "slug": "cerebrolysin-60mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/cerebrolysin-60mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Cerebrolysin-10pk-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 480.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 12584,
+          "label": "Labelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Cerebrolysin-10pk-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cerebrolysin-60mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 12585,
+          "label": "Unlabelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Cerebrolysin-10pk-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cerebrolysin-60mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 480.0
+    },
+    {
+      "id": 3744,
+      "name": "CJC-1295 + IPA - 10 Pack",
+      "officialName": "CJC-1295 + IPA - 10 Pack",
+      "slug": "cjc-1295-no-dac-ipa-blend",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-ipa-blend/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJCIPA-Bulk-Pack-2.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 540.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3746,
+          "label": "Labelled",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJCIPA-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-ipa-blend/?attribute_label=Labelled"
+        },
+        {
+          "id": 3747,
+          "label": "Unlabelled",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJCIPA-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-ipa-blend/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 540.0
+    },
+    {
+      "id": 2999,
+      "name": "CJC-1295 NO DAC + IPA",
+      "officialName": "CJC-1295 NO DAC + IPA",
+      "slug": "cjc-1295-no-dac-ipamorelin",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-ipamorelin/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/CJC-Ipa-website.jpg",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 90.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3936,
+      "name": "CJC-1295 NO DAC - 10PK",
+      "officialName": "CJC-1295 NO DAC - 10PK",
+      "slug": "cjc-1295-no-dac-10mg",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJC-1295-Bulk-Pack-5.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 600.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3937,
+          "label": "Labelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJC-1295-Bulk-Pack-5.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-10mg/?attribute_label=Labelled"
+        },
+        {
+          "id": 3938,
+          "label": "Unlabelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/CJC-1295-Bulk-Pack-5.jpg",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac-10mg/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 600.0
+    },
+    {
+      "id": 2555,
+      "name": "CJC-1295 NO DAC 10MG",
+      "officialName": "CJC-1295 NO DAC 10MG",
+      "slug": "cjc-1295-no-dac",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cjc-1295-no-dac/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/CJC_1295-NO-DAC-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 5926,
+      "name": "DIHEXA 10MG",
+      "officialName": "DIHEXA 10MG",
+      "slug": "dihexa-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/dihexa-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Dixhexa-10mg.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 120.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2574,
+      "name": "DSIP 10MG",
+      "officialName": "DSIP 10MG",
+      "slug": "dsip",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/dsip/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/DSIP-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 75.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7703,
+      "name": "DSIP 10MG - 10 Pack",
+      "officialName": "DSIP 10MG - 10 Pack",
+      "slug": "dsip-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/dsip-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/DSIP-10mg-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 450.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7704,
+          "label": "Labelled",
+          "price": 450.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/DSIP-10mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/dsip-10mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7705,
+          "label": "Unlabelled",
+          "price": 450.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/DSIP-10mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/dsip-10mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 450.0
+    },
+    {
+      "id": 46584,
+      "name": "ELORALINTIDE 10MG",
+      "officialName": "ELORALINTIDE 10MG",
+      "slug": "eloralintide-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/eloralintide-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Eloralintide-10mg-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 220.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7715,
+      "name": "EPITALON - 10 Pack",
+      "officialName": "EPITALON - 10 Pack",
+      "slug": "epitalon-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/epitalon-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Epitalon-50mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7716,
+          "label": "Labelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/BPC-157-10MG-Bulk-Pack.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 7717,
+          "label": "Unlabelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Epitalon-50mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 7718,
+          "label": "Labelled / 50mg",
+          "price": 900.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Epitalon-50mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon-10-pack/?attribute_label=Labelled&attribute_strength=50mg"
+        },
+        {
+          "id": 7719,
+          "label": "Unlabelled / 50mg",
+          "price": 900.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Epitalon-50mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon-10-pack/?attribute_label=Unlabelled&attribute_strength=50mg"
+        }
+      ],
+      "maxPrice": 900.0
+    },
+    {
+      "id": 2582,
+      "name": "EPITALON 10MG/50MG",
+      "officialName": "EPITALON 10MG/50MG",
+      "slug": "epitalon",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/epitalon/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Epitalon-50mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2586,
+          "label": "50mg",
+          "price": 150.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Epitalon-50mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon/?attribute_mg=50mg"
+        },
+        {
+          "id": 2585,
+          "label": "10mg",
+          "price": 70.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Epitalon.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/epitalon/?attribute_mg=10mg"
+        }
+      ],
+      "maxPrice": 150.0
+    },
+    {
+      "id": 7727,
+      "name": "FOX04-DRI - 10 Pack",
+      "officialName": "FOX04-DRI - 10 Pack",
+      "slug": "fox04-dri-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/fox04-dri-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/FOX04-DRI-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 1380.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7728,
+          "label": "Labelled",
+          "price": 1380.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/FOX04-DRI-10mg-Bulk-Pack.jpg",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/fox04-dri-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7729,
+          "label": "Unlabelled",
+          "price": 1380.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/FOX04-DRI-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/fox04-dri-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 1380.0
+    },
+    {
+      "id": 3883,
+      "name": "FOX04-DRI 10MG",
+      "officialName": "FOX04-DRI 10MG",
+      "slug": "fox04-dri-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/fox04-dri-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/FOX04-DRI-10mg.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 230.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3737,
+      "name": "GHK-cu - 10 Pack",
+      "officialName": "GHK-cu - 10 Pack",
+      "slug": "ghk-cu-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/ghk-cu-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/GHK-cu-Bulk-Pack-2.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 330.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3738,
+          "label": "50MG / Labelled",
+          "price": 330.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-CU-50mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu-10-pack/?attribute_strength=50MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3739,
+          "label": "50MG / Unlabelled",
+          "price": 330.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-CU-50mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu-10-pack/?attribute_strength=50MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 3740,
+          "label": "100MG / Labelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-Cu-100mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu-10-pack/?attribute_strength=100MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3741,
+          "label": "100MG / Unlabelled",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-Cu-100mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu-10-pack/?attribute_strength=100MG&attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 480.0
+    },
+    {
+      "id": 2520,
+      "name": "GHK-CU 50MG/100MG",
+      "officialName": "GHK-CU 50MG/100MG",
+      "slug": "ghk-cu",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/ghk-cu/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-CU-50mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 55.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2523,
+          "label": "50mg",
+          "price": 55.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-CU-50mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu/?attribute_mg=50mg"
+        },
+        {
+          "id": 3131,
+          "label": "100mg",
+          "price": 80.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GHK-Cu-100mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ghk-cu/?attribute_mg=100mg"
+        }
+      ],
+      "maxPrice": 80.0
+    },
+    {
+      "id": 22215,
+      "name": "GHK-CU RAW POWDER",
+      "officialName": "GHK-CU RAW POWDER",
+      "slug": "ghk-cu-raw-powder",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ghk-cu-raw-powder/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/08/GHK-cu-Raw-Powder-Copper-Tripeptide-1.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 45.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2525,
+      "name": "GLOW 70MG",
+      "officialName": "GLOW 70MG",
+      "slug": "glow",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/glow/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/GLOW-70mg-website.jpg",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 140.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7772,
+      "name": "GLOW 70MG - 10 Pack",
+      "officialName": "GLOW 70MG - 10 Pack",
+      "slug": "glow-70mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/glow-70mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/GLOW-70mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 740.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7773,
+          "label": "Labelled",
+          "price": 740.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/GLOW-70mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/glow-70mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7774,
+          "label": "Unlabelled",
+          "price": 740.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/GLOW-70mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/glow-70mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 740.0
+    },
+    {
+      "id": 2599,
+      "name": "GLUTATHIONE 1500MG",
+      "officialName": "GLUTATHIONE 1500MG",
+      "slug": "glutathione",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/glutathione/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Glutathione-1500MG.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 65.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 12575,
+      "name": "GLUTATHIONE 1500MG - 10 Pack",
+      "officialName": "GLUTATHIONE 1500MG - 10 Pack",
+      "slug": "glutathione-1500mg-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/glutathione-1500mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Glutathione-1500mg-10-Pack-1.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3308,
+      "name": "HCG 10000 IU",
+      "officialName": "HCG 10000 IU",
+      "slug": "hcg-10000-iu",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/hcg-10000-iu/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/HCG-10000IU.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7732,
+      "name": "HCG 10000IU - 10 Pack",
+      "officialName": "HCG 10000IU - 10 Pack",
+      "slug": "hcg-10000iu-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/hcg-10000iu-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/HCG-10000IU-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 620.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7733,
+          "label": "Labelled",
+          "price": 620.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/HCG-10000IU-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/hcg-10000iu-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7734,
+          "label": "Unlabelled",
+          "price": 620.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/HCG-10000IU-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/hcg-10000iu-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 620.0
+    },
+    {
+      "id": 58146,
+      "name": "HMG 75 IU",
+      "officialName": "HMG 75 IU",
+      "slug": "hmg-75iu",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/hmg-75iu/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/PurePeps-HMG-75-IU-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 61729,
+      "name": "HMG 75 IU - 10 Pack",
+      "officialName": "HMG 75 IU - 10 Pack",
+      "slug": "hmg-75-iu-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/hmg-75-iu-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/HMG-75iu-10-Pack.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 500.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 46577,
+      "name": "HUMANIN 10MG",
+      "officialName": "HUMANIN 10MG",
+      "slug": "humanin-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/humanin-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/HUMANIN-10MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 120.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2558,
+      "name": "IPAMORELIN 10MG",
+      "officialName": "IPAMORELIN 10MG",
+      "slug": "ipamorelin",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ipamorelin/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Ipamorelin-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7741,
+      "name": "KISSPEPTIN - 10 Pack",
+      "officialName": "KISSPEPTIN - 10 Pack",
+      "slug": "kisspeptin-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/kisspeptin-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Kisspeptin-5mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 440.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7742,
+          "label": "Labelled",
+          "price": 440.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Kisspeptin-5mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kisspeptin-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7743,
+          "label": "Unlabelled",
+          "price": 440.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Kisspeptin-5mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kisspeptin-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 440.0
+    },
+    {
+      "id": 2561,
+      "name": "KISSPEPTIN 5MG",
+      "officialName": "KISSPEPTIN 5MG",
+      "slug": "kisspeptin",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/kisspeptin/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Kisspeptin-5mg.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3006,
+      "name": "KLOW 80MG",
+      "officialName": "KLOW 80MG",
+      "slug": "klow-bpc-157tb-500ghk-cukpv",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/klow-bpc-157tb-500ghk-cukpv/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/KLOW-80mg-website.jpg",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 150.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3731,
+      "name": "KLOW 80MG - 10 Pack",
+      "officialName": "KLOW 80MG - 10 Pack",
+      "slug": "klow-80mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/klow-80mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/KLOW-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 840.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3735,
+          "label": "Labelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/KLOW-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/klow-80mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 3736,
+          "label": "Unlabelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/KLOW-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/klow-80mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 840.0
+    },
+    {
+      "id": 7752,
+      "name": "KPV - 10 Pack",
+      "officialName": "KPV - 10 Pack",
+      "slug": "kpv-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/kpv-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/KPV-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 360.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7754,
+          "label": "Unlabelled / 10mg",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/KPV-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 7753,
+          "label": "Labelled / 10mg",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/KPV-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv-10mg-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 38190,
+          "label": "Labelled / 20mg",
+          "price": 570.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/KPV-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv-10mg-10-pack/?attribute_label=Labelled&attribute_strength=20mg"
+        },
+        {
+          "id": 38192,
+          "label": "Unlabelled / 20mg",
+          "price": 570.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/KPV-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=20mg"
+        }
+      ],
+      "maxPrice": 570.0
+    },
+    {
+      "id": 2587,
+      "name": "KPV 10MG / 20MG",
+      "officialName": "KPV 10MG / 20MG",
+      "slug": "kpv",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/kpv/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/KPV-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 60.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 38179,
+          "label": "10mg",
+          "price": 60.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/KPV-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv/?attribute_mg=10mg"
+        },
+        {
+          "id": 38180,
+          "label": "20mg",
+          "price": 95.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/KPV-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/kpv/?attribute_mg=20mg"
+        }
+      ],
+      "maxPrice": 95.0
+    },
+    {
+      "id": 2595,
+      "name": "LL-37 5MG",
+      "officialName": "LL-37 5MG",
+      "slug": "ll-37",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ll-37/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/LL-37-5mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7724,
+      "name": "MELANOTAN 1 - 10 Pack",
+      "officialName": "MELANOTAN 1 - 10 Pack",
+      "slug": "melanotan-1-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/melanotan-1-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-1-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 340.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7725,
+          "label": "Labelled",
+          "price": 340.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-1-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/melanotan-1-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7726,
+          "label": "Unlabelled",
+          "price": 340.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-1-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/melanotan-1-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 340.0
+    },
+    {
+      "id": 5622,
+      "name": "MELANOTAN 1 10MG",
+      "officialName": "MELANOTAN 1 10MG",
+      "slug": "melanotan-1-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/melanotan-1-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melonatan-1.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 55.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 4336,
+      "name": "MELANOTAN 2 - 10 Pack",
+      "officialName": "MELANOTAN 2 - 10 Pack",
+      "slug": "melanotan-2-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/melanotan-2-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-2-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 360.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 4337,
+          "label": "Labelled",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-2-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/melanotan-2-10mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 4338,
+          "label": "Unlabelled",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Melanotan-2-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/melanotan-2-10mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 360.0
+    },
+    {
+      "id": 2528,
+      "name": "MELANOTAN 2 10MG",
+      "officialName": "MELANOTAN 2 10MG",
+      "slug": "melanotan-2",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/melanotan-2/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Melanotan-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 60.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3304,
+      "name": "MINI PEPTIDE CASE",
+      "officialName": "MINI PEPTIDE CASE",
+      "slug": "mini-peptide-case",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/mini-peptide-case/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Mini-Peptide-Case-Group-Picture.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 25.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3306,
+          "label": "Blue",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Mini-Peptide-case-Blue.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mini-peptide-case/?attribute_colour=Blue"
+        },
+        {
+          "id": 3307,
+          "label": "Silver",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Mini-Peptide-case-Silver.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mini-peptide-case/?attribute_colour=Silver"
+        },
+        {
+          "id": 3513,
+          "label": "Orange",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Mini-Peptide-case-orange-5.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mini-peptide-case/?attribute_colour=Orange"
+        },
+        {
+          "id": 3305,
+          "label": "Pink",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Mini-Peptide-Case-Pink-wo-vials.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mini-peptide-case/?attribute_colour=Pink"
+        }
+      ],
+      "maxPrice": 25.0
+    },
+    {
+      "id": 3721,
+      "name": "MOTS-C - 10 Pack",
+      "officialName": "MOTS-C - 10 Pack",
+      "slug": "mots-c-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/mots-c-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/mots-c-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3724,
+          "label": "10MG / Labelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c-10-pack/?attribute_strength=10MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3725,
+          "label": "10MG / Unlabelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c-10-pack/?attribute_strength=10MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 3726,
+          "label": "40MG / Labelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-40mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c-10-pack/?attribute_strength=40MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3727,
+          "label": "40MG / Unlabelled",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-40mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c-10-pack/?attribute_strength=40MG&attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 840.0
+    },
+    {
+      "id": 2539,
+      "name": "MOTS-C 10MG/40MG",
+      "officialName": "MOTS-C 10MG/40MG",
+      "slug": "mots-c",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/mots-c/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2542,
+          "label": "10mg",
+          "price": 70.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c/?attribute_mg=10mg"
+        },
+        {
+          "id": 2543,
+          "label": "40mg",
+          "price": 140.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/MOTS-C-40mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/mots-c/?attribute_mg=40mg"
+        }
+      ],
+      "maxPrice": 140.0
+    },
+    {
+      "id": 4326,
+      "name": "NAD+ 10 Pack",
+      "officialName": "NAD+ 10 Pack",
+      "slug": "nad-500mg-1000mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/nad-500mg-1000mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/NAD-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 4331,
+          "label": "500MG / Labelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-500mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad-500mg-1000mg-10-pack/?attribute_strength=500MG&attribute_label=Labelled"
+        },
+        {
+          "id": 4332,
+          "label": "500MG / Unlabelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-500mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad-500mg-1000mg-10-pack/?attribute_strength=500MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 4333,
+          "label": "1000MG / Labelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-1000mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad-500mg-1000mg-10-pack/?attribute_strength=1000MG&attribute_label=Labelled"
+        },
+        {
+          "id": 4334,
+          "label": "1000MG / Unlabelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-1000mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad-500mg-1000mg-10-pack/?attribute_strength=1000MG&attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 600.0
+    },
+    {
+      "id": 2532,
+      "name": "NAD+ 500MG/1000MG",
+      "officialName": "NAD+ 500MG/1000MG",
+      "slug": "nad",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/nad/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-500mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2535,
+          "label": "500mg",
+          "price": 70.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-500mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad/?attribute_mg=500mg"
+        },
+        {
+          "id": 2538,
+          "label": "1000mg",
+          "price": 100.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/NAD-1000mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/nad/?attribute_mg=1000mg"
+        }
+      ],
+      "maxPrice": 100.0
+    },
+    {
+      "id": 17281,
+      "name": "Nasal Pump Spray Bottle",
+      "officialName": "Nasal Pump Spray Bottle",
+      "slug": "nasal-pump-spray-bottle",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/nasal-pump-spray-bottle/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/07/Precision-Nasal-Spray-Pump-.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 18.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 59798,
+      "name": "Needle Clipper Tool",
+      "officialName": "Needle Clipper Tool",
+      "slug": "needle-clipper-tool",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/needle-clipper-tool/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/Needle-Clipping-Tool.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 15.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 48902,
+      "name": "OXYTOCIN 10MG",
+      "officialName": "OXYTOCIN 10MG",
+      "slug": "oxytocin-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/oxytocin-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Oxytocin-10mg.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3253,
+      "name": "P21 (P021) 10MG",
+      "officialName": "P21 (P021) 10MG",
+      "slug": "p21",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/p21/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/P21-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3249,
+      "name": "PE-22-28 10MG",
+      "officialName": "PE-22-28 10MG",
+      "slug": "pe-22-28",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/pe-22-28/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/PE-22_28-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 48897,
+      "name": "PEG-MGF 2MG",
+      "officialName": "PEG-MGF 2MG",
+      "slug": "peg-mgf-2mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/peg-mgf-2mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/PEG-MGF-2MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3832,
+      "name": "Pen Needle Tips - 31G 6mm",
+      "officialName": "Pen Needle Tips - 31G 6mm",
+      "slug": "v2-pen-needle-tips-31g-6mm",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/v2-pen-needle-tips-31g-6mm/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Pen-Needle-Tips-31G-6mm-scaled.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 40.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3012,
+      "name": "PEPTIDE VIAL CAPS",
+      "officialName": "PEPTIDE VIAL CAPS",
+      "slug": "peptide-vial-caps-6-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/peptide-vial-caps-6-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Vial-caps-with-labels.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 6.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2565,
+      "name": "PINEALON 20MG",
+      "officialName": "PINEALON 20MG",
+      "slug": "pinealon",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/pinealon/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Pinealon-20mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2598,
+      "name": "PNC-27 5MG",
+      "officialName": "PNC-27 5MG",
+      "slug": "pnc27",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/pnc27/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/PNC-5mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 150.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3004,
+      "name": "PT-141 10MG",
+      "officialName": "PT-141 10MG",
+      "slug": "pt-141",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/pt-141/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/PT-141-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 60.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7650,
+      "name": "PT-141 10MG - 10 Pack",
+      "officialName": "PT-141 10MG - 10 Pack",
+      "slug": "pt-141-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/pt-141-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/PT-141-0mg-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 360.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7651,
+          "label": "Labelled",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/PT-141-0mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/pt-141-10mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7652,
+          "label": "Unlabelled",
+          "price": 360.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/PT-141-0mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/pt-141-10mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 360.0
+    },
+    {
+      "id": 16700,
+      "name": "PurePeps Case",
+      "officialName": "PurePeps Case",
+      "slug": "purepeps-case",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/purepeps-case/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/07/Purepeps-Case-group-shot.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 60.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 16704,
+          "label": "Black/Gold",
+          "price": 60.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/07/PurePeps-Case-Black-gold.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-case/?attribute_colour=Black%2FGold"
+        },
+        {
+          "id": 16703,
+          "label": "Black/White",
+          "price": 60.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/07/PurePeps-Case-Black-white.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-case/?attribute_colour=Black%2FWhite"
+        },
+        {
+          "id": 16702,
+          "label": "Pink/Gold",
+          "price": 60.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/07/PurePeps-Case-Pink-gold.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-case/?attribute_colour=Pink%2FGold"
+        },
+        {
+          "id": 16701,
+          "label": "White/Blue",
+          "price": 60.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/07/PurePeps-Case-white-blue.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-case/?attribute_colour=White%2FBlue"
+        }
+      ],
+      "maxPrice": 60.0
+    },
+    {
+      "id": 47318,
+      "name": "PurePeps Pen Case",
+      "officialName": "PurePeps Pen Case",
+      "slug": "purepeps-pen-case",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/purepeps-pen-case/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/PurePeps-Pen-Case-Group.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 35.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 47509,
+          "label": "Black",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/PurePeps-Pen-Case-Black.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-pen-case/?attribute_colour=Black"
+        },
+        {
+          "id": 47510,
+          "label": "Gold",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/PurePeps-Pen-Case-Gold.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-pen-case/?attribute_colour=Gold"
+        },
+        {
+          "id": 47511,
+          "label": "Silver",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/PurePeps-Pen-Case-Silver.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-pen-case/?attribute_colour=Silver"
+        }
+      ],
+      "maxPrice": 35.0
+    },
+    {
+      "id": 28935,
+      "name": "PurePeps PurgePuck",
+      "officialName": "PurePeps PurgePuck",
+      "slug": "purepeps-purgepuck",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/purepeps-purgepuck/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/08/PurePeps-PurgePuck-.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 30.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 40848,
+      "name": "PurePeps Tiny Case",
+      "officialName": "PurePeps Tiny Case",
+      "slug": "purepeps-tiny-case",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 15.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 40872,
+          "label": "Black/White",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case-BlackWhite.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/?attribute_colour=Black%2FWhite"
+        },
+        {
+          "id": 40849,
+          "label": "Grey/Black",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case-Grey.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/?attribute_colour=Grey%2FBlack"
+        },
+        {
+          "id": 40850,
+          "label": "Blue/White",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case-Blue-.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/?attribute_colour=Blue%2FWhite"
+        },
+        {
+          "id": 40851,
+          "label": "Pink/White",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case-PinkWhite.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/?attribute_colour=Pink%2FWhite"
+        },
+        {
+          "id": 40852,
+          "label": "Black/Gold",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/PurePeps-Tiny-Case-BlackGold.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/purepeps-tiny-case/?attribute_colour=Black%2FGold"
+        }
+      ],
+      "maxPrice": 15.0
+    },
+    {
+      "id": 2460,
+      "name": "RETATRUTIDE",
+      "officialName": "RETATRUTIDE",
+      "slug": "retatrutide",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/retatrutide/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Retatrutide-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2462,
+          "label": "10mg",
+          "price": 100.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Retatrutide-10mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide/?attribute_mg=10mg"
+        },
+        {
+          "id": 2463,
+          "label": "20mg",
+          "price": 130.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Retatrutide-20mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide/?attribute_mg=20mg"
+        },
+        {
+          "id": 2461,
+          "label": "30mg",
+          "price": 160.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Retatrutide-30mg-website-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide/?attribute_mg=30mg"
+        },
+        {
+          "id": 3354,
+          "label": "60mg",
+          "price": 250.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Retatrutide-60MG.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide/?attribute_mg=60mg"
+        }
+      ],
+      "maxPrice": 250.0
+    },
+    {
+      "id": 3691,
+      "name": "RETATRUTIDE - 10 Pack",
+      "officialName": "RETATRUTIDE - 10 Pack",
+      "slug": "retatrutide-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 600.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3692,
+          "label": "10MG / Labelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=10MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3693,
+          "label": "10MG / Unlabelled",
+          "price": 600.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=10MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 3694,
+          "label": "20MG / Labelled",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=20MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3695,
+          "label": "20MG / Unlabelled",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=20MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 3696,
+          "label": "30MG / Labelled",
+          "price": 960.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=30MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3697,
+          "label": "30MG / Unlabelled",
+          "price": 960.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=30MG&attribute_label=Unlabelled"
+        },
+        {
+          "id": 3716,
+          "label": "60MG / Labelled",
+          "price": 1500.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=60MG&attribute_label=Labelled"
+        },
+        {
+          "id": 3717,
+          "label": "60MG / Unlabelled",
+          "price": 1500.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Retatrutide-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/retatrutide-10-pack/?attribute_mg=60MG&attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 1500.0
+    },
+    {
+      "id": 5493,
+      "name": "SELANK - 10 Pack",
+      "officialName": "SELANK - 10 Pack",
+      "slug": "selank-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/selank-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Selank-10mg-Bulk-Pack-1-scaled.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 5494,
+          "label": "Labelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Selank-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank-10mg-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 5495,
+          "label": "Unlabelled / 10mg",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Selank-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 38217,
+          "label": "Labelled / 30mg",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Selank-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank-10mg-10-pack/?attribute_label=Labelled&attribute_strength=30mg"
+        },
+        {
+          "id": 38218,
+          "label": "Unlabelled / 30mg",
+          "price": 840.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Selank-10mg-Bulk-Pack-1-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=30mg"
+        }
+      ],
+      "maxPrice": 840.0
+    },
+    {
+      "id": 2571,
+      "name": "SELANK 10MG / 30MG",
+      "officialName": "SELANK 10MG / 30MG",
+      "slug": "selank",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/selank/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Selank-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 38227,
+          "label": "10mg",
+          "price": 70.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Selank-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank/?attribute_mg=10mg"
+        },
+        {
+          "id": 38228,
+          "label": "30mg",
+          "price": 140.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Selank-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/selank/?attribute_mg=30mg"
+        }
+      ],
+      "maxPrice": 140.0
+    },
+    {
+      "id": 9986,
+      "name": "SEMAX + SELANK - 10 Pack",
+      "officialName": "SEMAX + SELANK - 10 Pack",
+      "slug": "semaxselank-10pk",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/semaxselank-10pk/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/SEMAXSELANK-20mg-Bulk-Pack-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 660.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 9988,
+          "label": "Labelled",
+          "price": 660.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/SEMAXSELANK-20mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semaxselank-10pk/?attribute_label=Labelled"
+        },
+        {
+          "id": 9989,
+          "label": "Unlabelled",
+          "price": 660.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/SEMAXSELANK-20mg-Bulk-Pack-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semaxselank-10pk/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 660.0
+    },
+    {
+      "id": 9980,
+      "name": "SEMAX + SELANK 20MG",
+      "officialName": "SEMAX + SELANK 20MG",
+      "slug": "semaxselank-20mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/semaxselank-20mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/SEMAXSELANK-20MG.png",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 110.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 5487,
+      "name": "SEMAX - 10 Pack",
+      "officialName": "SEMAX - 10 Pack",
+      "slug": "semax-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/semax-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Semax-Bulk-Pack-2-scaled.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 390.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 5488,
+          "label": "Labelled / 10mg",
+          "price": 390.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Semax-Bulk-Pack-2-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax-10mg-10-pack/?attribute_label=Labelled&attribute_mg=10mg"
+        },
+        {
+          "id": 5489,
+          "label": "Unlabelled / 10mg",
+          "price": 390.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Semax-Bulk-Pack-2-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax-10mg-10-pack/?attribute_label=Unlabelled&attribute_mg=10mg"
+        },
+        {
+          "id": 38197,
+          "label": "Labelled / 30mg",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Semax-Bulk-Pack-2-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax-10mg-10-pack/?attribute_label=Labelled&attribute_mg=30mg"
+        },
+        {
+          "id": 38198,
+          "label": "Unlabelled / 30mg",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Semax-Bulk-Pack-2-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax-10mg-10-pack/?attribute_label=Unlabelled&attribute_mg=30mg"
+        }
+      ],
+      "maxPrice": 780.0
+    },
+    {
+      "id": 2570,
+      "name": "SEMAX 10MG / 30MG",
+      "officialName": "SEMAX 10MG / 30MG",
+      "slug": "semax",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/semax/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Semax-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 65.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 38205,
+          "label": "10mg",
+          "price": 65.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Semax-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax/?attribute_mg=10mg"
+        },
+        {
+          "id": 38206,
+          "label": "30mg",
+          "price": 130.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Semax-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/semax/?attribute_mg=30mg"
+        }
+      ],
+      "maxPrice": 130.0
+    },
+    {
+      "id": 7760,
+      "name": "SLU-PP-332 - 10 Pack",
+      "officialName": "SLU-PP-332 - 10 Pack",
+      "slug": "slu-pp-332-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/slu-pp-332-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SLU-PP-332-5mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 720.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7761,
+          "label": "Labelled",
+          "price": 720.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SLU-PP-332-5mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/slu-pp-332-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7762,
+          "label": "Unlabelled",
+          "price": 720.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SLU-PP-332-5mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/slu-pp-332-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 720.0
+    },
+    {
+      "id": 2548,
+      "name": "SLU-PP-332 5MG",
+      "officialName": "SLU-PP-332 5MG",
+      "slug": "slu-pp-332",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/slu-pp-332/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/SLU-PP-332-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 120.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 16254,
+      "name": "SNAP-8 10MG",
+      "officialName": "SNAP-8 10MG",
+      "slug": "snap-8-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/snap-8-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/07/SNAP-8-10mg-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 50.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7706,
+      "name": "SS-31 - 10 Pack",
+      "officialName": "SS-31 - 10 Pack",
+      "slug": "ss-31-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/ss-31-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SS-31-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 480.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7707,
+          "label": "Labelled / 10mg",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SS-31-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 7708,
+          "label": "Unlabelled / 10mg",
+          "price": 480.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SS-31-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 7711,
+          "label": "Labelled / 50mg",
+          "price": 1200.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SS-31-50mg-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31-10-pack/?attribute_label=Labelled&attribute_strength=50mg"
+        },
+        {
+          "id": 7712,
+          "label": "Unlabelled / 50mg",
+          "price": 1200.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/SS-31-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31-10-pack/?attribute_label=Unlabelled&attribute_strength=50mg"
+        }
+      ],
+      "maxPrice": 1200.0
+    },
+    {
+      "id": 2485,
+      "name": "SS-31 10MG/50MG",
+      "officialName": "SS-31 10MG/50MG",
+      "slug": "ss-31",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/ss-31/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/SS-31-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 2486,
+          "label": "10mg",
+          "price": 80.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/SS-31-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31/?attribute_mg=10mg"
+        },
+        {
+          "id": 2487,
+          "label": "50mg",
+          "price": 200.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/SS-31-50mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ss-31/?attribute_mg=50mg"
+        }
+      ],
+      "maxPrice": 200.0
+    },
+    {
+      "id": 3925,
+      "name": "TB-500 - 10 Pack",
+      "officialName": "TB-500 - 10 Pack",
+      "slug": "tb-500-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/tb-500-10mg-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/TB-500-Bulk-Pack-2.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 540.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 9969,
+          "label": "Labelled / 10MG",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/TB-500-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500-10mg-10-pack/?attribute_label=Labelled&attribute_strength=10MG"
+        },
+        {
+          "id": 9971,
+          "label": "Unlabelled / 10MG",
+          "price": 540.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/TB-500-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=10MG"
+        },
+        {
+          "id": 9970,
+          "label": "Labelled / 20MG",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/TB-500-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500-10mg-10-pack/?attribute_label=Labelled&attribute_strength=20MG"
+        },
+        {
+          "id": 9972,
+          "label": "Unlabelled / 20MG",
+          "price": 780.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/TB-500-Bulk-Pack-2.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500-10mg-10-pack/?attribute_label=Unlabelled&attribute_strength=20MG"
+        }
+      ],
+      "maxPrice": 780.0
+    },
+    {
+      "id": 2516,
+      "name": "TB-500 10MG / 20MG",
+      "officialName": "TB-500 10MG / 20MG",
+      "slug": "tb-500",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/tb-500/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/TB-500-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 90.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 9976,
+          "label": "10mg",
+          "price": 90.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/TB-500-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500/?attribute_mg=10mg"
+        },
+        {
+          "id": 9977,
+          "label": "20mg",
+          "price": 130.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/TB-500-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tb-500/?attribute_mg=20mg"
+        }
+      ],
+      "maxPrice": 130.0
+    },
+    {
+      "id": 11766,
+      "name": "Tesamorelin + Ipamorelin - 10 Pack",
+      "officialName": "Tesamorelin + Ipamorelin - 10 Pack",
+      "slug": "tesamorelin-ipamorelin-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/tesamorelin-ipamorelin-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Tesamorelin-Ipamorelin-12mg-Blend-10pk-1-1.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 790.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 11767,
+          "label": "Labelled",
+          "price": 790.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Tesamorelin-Ipamorelin-12mg-Blend-10pk-1-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-ipamorelin-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 11768,
+          "label": "Unlabelled",
+          "price": 790.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Tesamorelin-Ipamorelin-12mg-Blend-10pk-1-1.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-ipamorelin-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 790.0
+    },
+    {
+      "id": 7178,
+      "name": "TESAMORELIN - 10 Pack",
+      "officialName": "TESAMORELIN - 10 Pack",
+      "slug": "tesamorelin-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/tesamorelin-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Tesamorelin-Bulk-Pack-scaled.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 690.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 24914,
+          "label": "Labelled / 10mg",
+          "price": 690.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Tesamorelin-Bulk-Pack-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-10-pack/?attribute_label=Labelled&attribute_strength=10mg"
+        },
+        {
+          "id": 24916,
+          "label": "Unlabelled / 10mg",
+          "price": 690.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Tesamorelin-Bulk-Pack-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-10-pack/?attribute_label=Unlabelled&attribute_strength=10mg"
+        },
+        {
+          "id": 24915,
+          "label": "Labelled / 20mg",
+          "price": 1020.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Tesamorelin-Bulk-Pack-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-10-pack/?attribute_label=Labelled&attribute_strength=20mg"
+        },
+        {
+          "id": 24917,
+          "label": "Unlabelled / 20mg",
+          "price": 1020.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Tesamorelin-Bulk-Pack-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin-10-pack/?attribute_label=Unlabelled&attribute_strength=20mg"
+        }
+      ],
+      "maxPrice": 1020.0
+    },
+    {
+      "id": 10315,
+      "name": "TESAMORELIN 10MG + IPAMORELIN 2MG",
+      "officialName": "TESAMORELIN 10MG + IPAMORELIN 2MG",
+      "slug": "tesamorelin-ipamorelin-12mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/tesamorelin-ipamorelin-12mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Tesamorelin-Ipamorelin-12mg-2.jpg",
+      "categories": [
+        "Peptides",
+        "Stacks & Blends"
+      ],
+      "price": 130.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2552,
+      "name": "TESAMORELIN 10MG/20MG",
+      "officialName": "TESAMORELIN 10MG/20MG",
+      "slug": "tesamorelin",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/tesamorelin/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Tesamorelin-10mg-website.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 110.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 24879,
+          "label": "10mg",
+          "price": 110.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Tesamorelin-10mg-website.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin/?attribute_mg=10mg"
+        },
+        {
+          "id": 24881,
+          "label": "20mg",
+          "price": 170.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/02/Tesamorelin-20mg-.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/tesamorelin/?attribute_mg=20mg"
+        }
+      ],
+      "maxPrice": 170.0
+    },
+    {
+      "id": 3010,
+      "name": "THE PEPTIDE CASE",
+      "officialName": "THE PEPTIDE CASE",
+      "slug": "peptide-cases",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/peptide-cases/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Peptide-case-open-angle.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 45.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3301,
+          "label": "Pink",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/The-Peptide-Case-Pink-.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/peptide-cases/?attribute_colour=Pink"
+        },
+        {
+          "id": 3562,
+          "label": "Orange",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/04/Peptide-case-orange.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/peptide-cases/?attribute_colour=Orange"
+        },
+        {
+          "id": 3014,
+          "label": "Blue",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/blue-case-1.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/peptide-cases/?attribute_colour=Blue"
+        },
+        {
+          "id": 3016,
+          "label": "Silver",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/peptide-case-silver.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/peptide-cases/?attribute_colour=Silver"
+        }
+      ],
+      "maxPrice": 45.0
+    },
+    {
+      "id": 3881,
+      "name": "THYMALIN 10MG",
+      "officialName": "THYMALIN 10MG",
+      "slug": "thymalin-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/thymalin-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/THYMALIN-10mg.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 70.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 2592,
+      "name": "THYMOSIN ALPHA-1 10MG",
+      "officialName": "THYMOSIN ALPHA-1 10MG",
+      "slug": "thymosin-alpha-1",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/thymosin-alpha-1/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/TA1-10MG.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 7763,
+      "name": "THYMOSIN ALPHA-1 10pk",
+      "officialName": "THYMOSIN ALPHA-1 10pk",
+      "slug": "thymosin-alpha-1-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/thymosin-alpha-1-10-pack/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/TA1-10mg-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 620.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 7764,
+          "label": "Labelled",
+          "price": 620.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/TA1-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/thymosin-alpha-1-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 7765,
+          "label": "Unlabelled",
+          "price": 620.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/TA1-10mg-Bulk-Pack.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/thymosin-alpha-1-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 620.0
+    },
+    {
+      "id": 3134,
+      "name": "Ultra-Thin Syringes",
+      "officialName": "Ultra-Thin Syringes",
+      "slug": "insulin-syringes",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/insulin-syringes/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/03/Main-Syringe.jpg",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 5.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 48104,
+          "label": "0.3ml / 100 Pack",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/10/Syringe-0.3ML-31G-X-6MM.png",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.3ml&attribute_quantity=100+Pack"
+        },
+        {
+          "id": 3145,
+          "label": "0.5ml / 5 Pack",
+          "price": 5.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/5pk-0.5ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.5ml&attribute_quantity=5+Pack"
+        },
+        {
+          "id": 3144,
+          "label": "0.5ml / 10 Pack",
+          "price": 8.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/1ml-syringe.webp",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.5ml&attribute_quantity=10+Pack"
+        },
+        {
+          "id": 3143,
+          "label": "0.5ml / 25 Pack",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/5pk-0.5ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.5ml&attribute_quantity=25+Pack"
+        },
+        {
+          "id": 3142,
+          "label": "0.5ml / 50 Pack",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/5pk-0.5ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.5ml&attribute_quantity=50+Pack"
+        },
+        {
+          "id": 3135,
+          "label": "0.5ml / 100 Pack",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/5pk-0.5ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=0.5ml&attribute_quantity=100+Pack"
+        },
+        {
+          "id": 3148,
+          "label": "1ml / 5 Pack",
+          "price": 5.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/1ml-syringe.webp",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=1ml&attribute_quantity=5+Pack"
+        },
+        {
+          "id": 3149,
+          "label": "1ml / 10 Pack",
+          "price": 8.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/10-pack-1ml-scaled.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=1ml&attribute_quantity=10+Pack"
+        },
+        {
+          "id": 3150,
+          "label": "1ml / 25 Pack",
+          "price": 15.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/10pk-syringe-1ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=1ml&attribute_quantity=25+Pack"
+        },
+        {
+          "id": 3151,
+          "label": "1ml / 50 Pack",
+          "price": 25.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/10pk-syringe-1ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=1ml&attribute_quantity=50+Pack"
+        },
+        {
+          "id": 3152,
+          "label": "1ml / 100 Pack",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/03/10pk-syringe-1ml.jpg",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/insulin-syringes/?attribute_size=1ml&attribute_quantity=100+Pack"
+        }
+      ],
+      "maxPrice": 35.0
+    },
+    {
+      "id": 3820,
+      "name": "V2 REUSABLE PEN",
+      "officialName": "V2 REUSABLE PEN",
+      "slug": "v2-reusable-pen",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/v2-reusable-pen/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/10/V2.1-Reusable-Pen.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 35.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 31660,
+          "label": "Red",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/08/V2.1-Reusable-Pen-Red.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Red"
+        },
+        {
+          "id": 30358,
+          "label": "Orange",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/08/V2.1-Reusable-Pen-Orange-.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Orange"
+        },
+        {
+          "id": 3821,
+          "label": "Black",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Pen-Black.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Black"
+        },
+        {
+          "id": 3822,
+          "label": "Silver",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Pen-Silver.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Silver"
+        },
+        {
+          "id": 3823,
+          "label": "Pink",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Pen-Pink-.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Pink"
+        },
+        {
+          "id": 5394,
+          "label": "Blue",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/06/V2-Pen-Blue.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Blue"
+        },
+        {
+          "id": 5395,
+          "label": "Purple",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/08/V2.1-Reusable-Pen-Purple.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Purple"
+        },
+        {
+          "id": 5396,
+          "label": "Green",
+          "price": 35.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/08/V2.1-Reusable-Pen-Green.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen/?attribute_colour=Green"
+        }
+      ],
+      "maxPrice": 35.0
+    },
+    {
+      "id": 3815,
+      "name": "V2 REUSABLE PEN KIT",
+      "officialName": "V2 REUSABLE PEN KIT",
+      "slug": "v2-reusable-pen-kit",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/v2-reusable-pen-kit/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Insulin-Pen-Kit.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 45.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 3816,
+          "label": "Black",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Insulin-Pen-Kit-Black.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen-kit/?attribute_colour=Black"
+        },
+        {
+          "id": 3817,
+          "label": "Silver",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Insulin-Pen-Kit-Silver.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen-kit/?attribute_colour=Silver"
+        },
+        {
+          "id": 3818,
+          "label": "Pink",
+          "price": 45.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/V2-Insulin-Pen-Kit-Pink.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/v2-reusable-pen-kit/?attribute_colour=Pink"
+        }
+      ],
+      "maxPrice": 45.0
+    },
+    {
+      "id": 61080,
+      "name": "VESUGEN 20MG",
+      "officialName": "VESUGEN 20MG",
+      "slug": "vesugen-20mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/vesugen-20mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/Vesugen-20MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 150.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 40911,
+      "name": "Vial Caps - 10ml",
+      "officialName": "Vial Caps - 10ml",
+      "slug": "vial-caps-10ml",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/vial-caps-10ml/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/09/Vial-Caps-10ml.png",
+      "categories": [
+        "Accessories & Essentials"
+      ],
+      "price": 2.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 40934,
+          "label": "BAC",
+          "price": 2.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/Vial-cap-BAC.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/vial-caps-10ml/?attribute_name=BAC"
+        },
+        {
+          "id": 40935,
+          "label": "GT",
+          "price": 2.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/Vial-cap-Gluta.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/vial-caps-10ml/?attribute_name=GT"
+        },
+        {
+          "id": 40936,
+          "label": "NAD",
+          "price": 2.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/09/Vial-Cap-NAD.png",
+          "inStock": true,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/vial-caps-10ml/?attribute_name=NAD"
+        }
+      ],
+      "maxPrice": 2.0
+    },
+    {
+      "id": 3885,
+      "name": "VIP 10MG",
+      "officialName": "VIP 10MG",
+      "slug": "vip-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/vip-10mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/VIP-10mg.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 120.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 67028,
+      "name": "ZETIDE 30MG",
+      "officialName": "ZETIDE 30MG",
+      "slug": "zetide-30mg-2",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/zetide-30mg-2/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/Tirzepatide-30MG.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 10074,
+      "name": "ZETIDE 30MG - 10 Pack",
+      "officialName": "ZETIDE 30MG - 10 Pack",
+      "slug": "zetide-30mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/zetide-30mg/",
+      "inStock": true,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/06/Tirzepatide-30MG-10-Pack-.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 600.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 6906,
+      "name": "ARA 290 - 10MG",
+      "officialName": "ARA 290 - 10MG",
+      "slug": "ara-290-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ara-290-10mg/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/ChatGPT-Image-Sep-30-2026-08_16_40-AM.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 80.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 43769,
+      "name": "ARA 290 10MG - 10 Pack",
+      "officialName": "ARA 290 10MG - 10 Pack",
+      "slug": "ara-290-10mg-10-pack",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ara-290-10mg-10-pack/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/09/ARA-290-Bulk-pack.png",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 500.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 61073,
+      "name": "CARDIOGEN 25MG",
+      "officialName": "CARDIOGEN 25MG",
+      "slug": "cardiogen-25mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/cardiogen-25mg/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/Cardiogen-25MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 100.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 3431,
+      "name": "GHRP-6 10MG",
+      "officialName": "GHRP-6 10MG",
+      "slug": "ghrp-6-10mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/ghrp-6-10mg/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/04/GHRP-6.jpg",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 75.0,
+      "currency": "AUD"
+    },
+    {
+      "id": 5363,
+      "name": "IPAMORELIN - 10 Pack",
+      "officialName": "IPAMORELIN - 10 Pack",
+      "slug": "ipamorelin-10mg-10-pack",
+      "type": "variable",
+      "permalink": "https://purepeps.com.au/product/ipamorelin-10mg-10-pack/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Ipamorelin-Bulk-Pack.jpg",
+      "categories": [
+        "Bulk Peptide Packs",
+        "Peptides"
+      ],
+      "price": 420.0,
+      "currency": "AUD",
+      "variations": [
+        {
+          "id": 5364,
+          "label": "Labelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Ipamorelin-Bulk-Pack.jpg",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ipamorelin-10mg-10-pack/?attribute_label=Labelled"
+        },
+        {
+          "id": 5365,
+          "label": "Unlabelled",
+          "price": 420.0,
+          "image": "https://purepeps.com.au/wp-content/uploads/2026/05/Ipamorelin-Bulk-Pack.jpg",
+          "inStock": false,
+          "purchasable": true,
+          "permalink": "https://purepeps.com.au/product/ipamorelin-10mg-10-pack/?attribute_label=Unlabelled"
+        }
+      ],
+      "maxPrice": 420.0
+    },
+    {
+      "id": 61086,
+      "name": "VILON 20MG",
+      "officialName": "VILON 20MG",
+      "slug": "vilon-20mg",
+      "type": "simple",
+      "permalink": "https://purepeps.com.au/product/vilon-20mg/",
+      "inStock": false,
+      "purchasable": true,
+      "image": "https://purepeps.com.au/wp-content/uploads/2026/11/Vilon-20MG-.png",
+      "categories": [
+        "Peptides"
+      ],
+      "price": 75.0,
+      "currency": "AUD"
+    }
+  ]
+}

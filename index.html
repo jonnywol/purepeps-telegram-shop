@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>PurePeps Shop</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy-0: #040b14;
+      --navy-1: #071722;
+      --navy-2: #0a2430;
+      --teal: #5ff5e2;
+      --teal-deep: #22c3c9;
+      --mint: #7dfff0;
+      --mint-soft: #bff7ef;
+      --ink: #03141c;
+      --text: #f4fffd;
+      --muted: #9ec9c3;
+      --line: rgba(95, 245, 226, 0.22);
+      --card: rgba(8, 32, 42, 0.86);
+      --danger: #ff8b8b;
+      --radius: 16px;
+      --pad: 16px;
+      --header-h: 58px;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bot: env(safe-area-inset-bottom, 0px);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: var(--navy-0);
+      color: var(--text);
+      font-family: "DM Sans", "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      background:
+        radial-gradient(circle at 50% -10%, #0f4f5c 0%, transparent 48%),
+        radial-gradient(circle at 100% 80%, rgba(34, 195, 201, 0.12) 0%, transparent 36%),
+        var(--navy-0);
+      min-height: 100%;
+    }
+    button, input { font: inherit; color: inherit; }
+    button { cursor: pointer; border: 0; background: none; }
+    img { display: block; max-width: 100%; }
+    a { color: var(--teal); text-decoration: none; }
+    a.btn { color: inherit; }
+
+    .app {
+      width: min(430px, 100%);
+      margin: 0 auto;
+      min-height: 100%;
+      position: relative;
+      padding-bottom: calc(20px + var(--safe-bot));
+    }
+    header.top {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: calc(var(--header-h) + var(--safe-top));
+      padding: calc(8px + var(--safe-top)) var(--pad) 8px;
+      background: linear-gradient(to bottom, rgba(4, 11, 20, 0.96) 70%, rgba(4, 11, 20, 0.72));
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .logo-pill {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 9px;
+      padding: 6px 10px;
+      box-shadow: 0 0 16px rgba(80, 240, 220, 0.35);
+      height: 34px;
+    }
+    .logo-pill img { height: 20px; width: auto; }
+    .preview-chip {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mint-soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+    .spacer { flex: 1; }
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(7, 23, 34, 0.7);
+      display: grid;
+      place-items: center;
+      position: relative;
+      color: var(--mint-soft);
+    }
+    .icon-btn svg { width: 20px; height: 20px; }
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--teal);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .badge.on { display: flex; }
+
+    .legal-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px var(--pad) 2px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    main { padding: 10px var(--pad) 28px; }
+    .view { display: none; }
+    .view.on { display: block; }
+
+    .search {
+      width: 100%;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--navy-1);
+      padding: 0 14px;
+      font-size: 16px;
+      margin: 8px 0 10px;
+      outline: none;
+    }
+    .search:focus { border-color: var(--teal-deep); box-shadow: 0 0 0 3px rgba(34, 195, 201, 0.18); }
+    .search::placeholder { color: var(--muted); }
+
+    .chips-wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 0 10px;
+      margin: 0 calc(var(--pad) * -1);
+      padding-left: var(--pad);
+      padding-right: var(--pad);
+      scrollbar-width: none;
+    }
+    .chips-wrap::-webkit-scrollbar { display: none; }
+    .filter {
+      flex: 0 0 auto;
+      height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--navy-1);
+      color: var(--mint-soft);
+      font-weight: 600;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .filter.on {
+      background: linear-gradient(135deg, #7dfff0, #22c3c9);
+      color: var(--ink);
+      border-color: transparent;
+    }
+    .count-line {
+      color: var(--muted);
+      font-size: 12px;
+      margin: 0 0 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-align: left;
+      width: 100%;
+      color: inherit;
+    }
+    .card:active { transform: scale(0.985); }
+    .card.oos { opacity: 0.72; }
+    .plate {
+      background: radial-gradient(ellipse at 50% 70%, #ffffff 0%, #e8fffb 42%, #b7f3ea 100%);
+      aspect-ratio: 1 / 0.92;
+      display: grid;
+      place-items: center;
+      padding: 6px 6px 0;
+      position: relative;
+    }
+    .plate img {
+      width: 88%;
+      height: 92%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+    .card.oos .plate img { filter: grayscale(0.85); mix-blend-mode: multiply; }
+    .stock-tag {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      background: rgba(3, 20, 28, 0.82);
+      color: #ffd0d0;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+    .card-body { padding: 8px 10px 10px; }
+    .card-body h2 {
+      font-size: 12.5px;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+      min-height: 2.5em;
+    }
+    .price {
+      color: var(--teal);
+      font-weight: 700;
+      font-size: 15px;
+      font-variant-numeric: tabular-nums;
+      margin: 2px 0 4px;
+    }
+    .from { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; color: var(--muted); margin-right: 4px; }
+    .ruo { font-size: 10px; color: var(--muted); line-height: 1.3; }
+
+    .back-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .back-row button {
+      color: var(--mint-soft);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 6px 0;
+    }
+    .detail-plate {
+      background: radial-gradient(ellipse at 50% 60%, #ffffff 0%, #e8fffb 50%, #baf3ea 100%);
+      border-radius: 22px;
+      border: 1px solid rgba(95, 245, 226, 0.35);
+      box-shadow: 0 0 28px rgba(70, 240, 220, 0.18);
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .detail-plate img { width: 72%; max-width: 260px; mix-blend-mode: multiply; }
+    .detail h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+    .official { color: var(--muted); font-size: 12px; margin: 6px 0 10px; }
+    .detail .price { font-size: 28px; margin: 4px 0 6px; }
+    .detail .ruo {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--mint-soft);
+      margin-bottom: 12px;
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+    .sizes { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .chip {
+      min-width: 64px;
+      height: 40px;
+      padding: 0 12px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--navy-1);
+      color: var(--mint-soft);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .chip.on {
+      background: linear-gradient(135deg, #7dfff0, #22c3c9);
+      color: var(--ink);
+      border-color: transparent;
+      box-shadow: 0 0 16px rgba(95, 245, 226, 0.35);
+    }
+    .chip.oos { opacity: 0.45; text-decoration: line-through; }
+    .qty-row { display: flex; align-items: center; gap: 12px; margin: 4px 0 16px; }
+    .stepper {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--navy-1);
+    }
+    .stepper button { width: 40px; height: 40px; font-size: 20px; color: var(--teal); }
+    .stepper span { min-width: 28px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 48px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #7dfff0, #22c3c9);
+      color: var(--ink);
+      box-shadow: 0 0 22px rgba(95, 245, 226, 0.28);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--mint-soft);
+      border: 1px solid var(--line);
+    }
+    .btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+    .oos-note {
+      background: rgba(80, 20, 24, 0.35);
+      border: 1px solid rgba(255, 139, 139, 0.3);
+      color: #ffd0d0;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .sticky-checkout {
+      position: sticky;
+      bottom: 0;
+      margin: 8px calc(var(--pad) * -1) 0;
+      padding: 10px var(--pad) calc(10px + var(--safe-bot));
+      background: linear-gradient(to top, rgba(4, 11, 20, 0.98) 70%, rgba(4, 11, 20, 0.7));
+      border-top: 1px solid var(--line);
+      display: none;
+      gap: 12px;
+      align-items: center;
+    }
+    .sticky-checkout.on { display: flex; }
+    .sticky-checkout .sum { flex: 1; }
+    .sticky-checkout .sum b { display: block; color: var(--teal); font-size: 18px; }
+    .sticky-checkout .sum span { font-size: 11px; color: var(--muted); }
+    .sticky-checkout .btn { width: auto; padding: 0 22px; flex: 1.1; }
+    .in-telegram .sticky-checkout { display: none !important; }
+
+    .drawer-bg {
+      position: fixed; inset: 0; background: rgba(0, 0, 0, 0.55);
+      z-index: 40; display: none;
+    }
+    .drawer-bg.on { display: block; }
+    .drawer {
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 110%);
+      width: min(430px, 100%);
+      max-height: min(86vh, 720px);
+      background: #071822;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 22px 22px 0 0;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s ease;
+      padding-bottom: var(--safe-bot);
+    }
+    .drawer.on { transform: translate(-50%, 0); }
+    .handle {
+      width: 42px; height: 4px; border-radius: 4px;
+      background: rgba(191, 247, 239, 0.28); margin: 10px auto 4px;
+    }
+    .drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 6px 18px 10px; }
+    .drawer-head h2 { font-size: 20px; }
+    .drawer-body { overflow: auto; padding: 0 16px 16px; flex: 1; }
+    .empty { text-align: center; color: var(--muted); padding: 36px 10px; font-size: 15px; }
+    .line {
+      display: grid;
+      grid-template-columns: 64px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(95, 245, 226, 0.12);
+    }
+    .line .thumb {
+      width: 64px; height: 64px; border-radius: 12px;
+      background: #e8fffb; display: grid; place-items: center; padding: 4px;
+    }
+    .line .thumb img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+    .line h3 { font-size: 14px; font-weight: 650; }
+    .line .meta { font-size: 12px; color: var(--muted); margin: 2px 0 6px; }
+    .line .right { text-align: right; }
+    .line .right .price { font-size: 14px; margin: 0 0 6px; }
+    .remove { font-size: 11px; color: var(--danger); font-weight: 600; padding: 4px 0; }
+    .drawer-foot { border-top: 1px solid var(--line); padding: 12px 16px 16px; }
+    .tot { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+    .tot span { color: var(--muted); font-size: 13px; }
+    .tot b { font-size: 22px; color: var(--teal); font-variant-numeric: tabular-nums; }
+
+    .confirm h1 { font-size: 24px; margin: 4px 0 8px; }
+    .confirm .lead { color: var(--mint-soft); font-size: 14.5px; line-height: 1.45; margin-bottom: 16px; }
+    .confirm .note {
+      background: rgba(15, 79, 92, 0.35);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--mint-soft);
+      margin: 0 0 14px;
+    }
+    .url-box {
+      background: var(--navy-1);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 11.5px;
+      line-height: 1.45;
+      word-break: break-word;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .url-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 8px 0 6px;
+    }
+    .confirm-list {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 4px 12px;
+      margin: 0 0 14px;
+      background: rgba(7, 23, 34, 0.6);
+    }
+    .confirm-list .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(95, 245, 226, 0.1);
+      font-size: 14px;
+    }
+    .confirm-list .row:last-child { border-bottom: 0; font-weight: 700; color: var(--teal); }
+    .remain { display: grid; gap: 8px; margin: 0 0 14px; }
+    .remain a, .remain button.linkish {
+      display: block;
+      text-align: left;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .actions { display: grid; gap: 8px; margin-top: 16px; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      top: calc(var(--header-h) + var(--safe-top) + 10px);
+      transform: translate(-50%, -8px);
+      background: #e8fffb;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.2s ease;
+      z-index: 80;
+      box-shadow: 0 0 18px rgba(95, 245, 226, 0.35);
+      white-space: nowrap;
+    }
+    .toast.on { opacity: 1; transform: translate(-50%, 0); }
+    footer.site {
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+      padding: 6px 16px 10px;
+      letter-spacing: 0.04em;
+    }
+    .status {
+      text-align: center;
+      color: var(--muted);
+      padding: 40px 16px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="top">
+      <div class="logo-pill"><img src="images/logo.png" alt="PurePeps"></div>
+      <span class="preview-chip">Preview</span>
+      <div class="spacer"></div>
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 7h15l-1.4 8.4a2 2 0 0 1-2 1.6H9.2a2 2 0 0 1-2-1.6L5 4H3"/>
+          <circle cx="9" cy="20" r="1.2" fill="currentColor" stroke="none"/>
+          <circle cx="18" cy="20" r="1.2" fill="currentColor" stroke="none"/>
+        </svg>
+        <span class="badge" id="cartBadge">0</span>
+      </button>
+    </header>
+
+    <div class="legal-bar">
+      <span>PurePeps shop</span>
+      <span>For research use only</span>
+    </div>
+
+    <main>
+      <section class="view on" id="view-grid" data-view="grid">
+        <label class="sr" for="q" style="position:absolute;left:-9999px">Search products</label>
+        <input class="search" id="q" type="search" placeholder="Search products" autocomplete="off">
+        <div class="chips-wrap" id="filters"></div>
+        <div class="count-line" id="countLine"></div>
+        <div class="grid" id="grid"><div class="status">Loading the catalogue.</div></div>
+      </section>
+
+      <section class="view" id="view-detail" data-view="detail">
+        <div class="back-row"><button type="button" id="backToGrid">Back to shop</button></div>
+        <div class="detail" id="detail"></div>
+      </section>
+
+      <section class="view" id="view-checkout" data-view="checkout">
+        <div class="back-row"><button type="button" id="backFromCheckout">Back to shop</button></div>
+        <div class="confirm" id="confirm"></div>
+      </section>
+    </main>
+
+    <div class="sticky-checkout" id="sticky">
+      <div class="sum">
+        <span id="stickyCount">0 items</span>
+        <b id="stickyTotal">$0 AUD</b>
+      </div>
+      <button class="btn btn-primary" type="button" id="stickyCheckout">Checkout</button>
+    </div>
+    <footer class="site">For research use only. Not for human or veterinary use.</footer>
+  </div>
+
+  <div class="drawer-bg" id="drawerBg"></div>
+  <aside class="drawer" id="drawer" aria-label="Cart">
+    <div class="handle"></div>
+    <div class="drawer-head">
+      <h2>Your cart</h2>
+      <button type="button" id="closeCart" class="icon-btn" aria-label="Close cart" style="width:36px;height:36px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot" id="cartFoot"></div>
+  </aside>
+  <div class="toast" id="toast">Added to cart</div>
+
+  <script>
+    const STORE = "https://purepeps.com.au";
+    const API = STORE + "/wp-json/wc/store/v1/products";
+    const money = (n) => "$" + Number(n).toLocaleString("en-AU") + " AUD";
+    const moneyShort = (n) => "$" + Number(n).toLocaleString("en-AU");
+    const prettyUrl = (u) => u.replace(/([?&])/g, "$1\u200b");
+    const cleanText = (value) => String(value || "")
+      .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+      .replace(/&amp;/g, "&")
+      .replace(/[\u2014\u2013\u2212]/g, "-")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const tg = window.Telegram && window.Telegram.WebApp;
+    let PRODUCTS = [];
+    let SOURCE = "snapshot";
+    let FETCHED_AT = "";
+    let cart = [];
+    let currentId = null;
+    let selectedVar = null;
+    let qty = 1;
+    let query = "";
+    let category = "All";
+
+    try {
+      const saved = JSON.parse(localStorage.getItem("ppa-shop-cart-v2") || "[]");
+      if (Array.isArray(saved)) cart = saved;
+    } catch (e) {}
+
+    function saveCart() { localStorage.setItem("ppa-shop-cart-v2", JSON.stringify(cart)); }
+    function cartCount() { return cart.reduce((s, i) => s + i.qty, 0); }
+    function cartTotal() { return cart.reduce((s, i) => s + i.price * i.qty, 0); }
+    function byId(id) { return PRODUCTS.find((p) => p.id === id); }
+    function minPrice(p) {
+      if (p.variations && p.variations.length) {
+        const prices = p.variations.map((v) => v.price).filter((n) => n != null);
+        return prices.length ? Math.min(...prices) : p.price;
+      }
+      return p.price;
+    }
+    function hasRange(p) {
+      if (!p.variations || p.variations.length < 2) return false;
+      const prices = p.variations.map((v) => v.price).filter((n) => n != null);
+      return prices.length > 1 && Math.min(...prices) !== Math.max(...prices);
+    }
+    function variationOf(p, vid) { return (p.variations || []).find((v) => v.id === vid); }
+
+    function parsePrice(prices) {
+      if (!prices || prices.price == null || prices.price === "") return null;
+      let amount = Number(prices.price);
+      const minor = Number(prices.currency_minor_unit || 0);
+      if (minor > 0) amount = amount / Math.pow(10, minor);
+      return amount;
+    }
+    function firstImage(item) {
+      const img = (item.images || [])[0] || {};
+      return img.src || img.thumbnail || null;
+    }
+    function normalizeApiProduct(p, varsByParent) {
+      const cats = (p.categories || []).map((c) => cleanText(c.name)).filter(Boolean);
+      const entry = {
+        id: p.id,
+        name: cleanText(p.name),
+        officialName: cleanText(p.name),
+        slug: p.slug,
+        type: p.type || "simple",
+        permalink: p.permalink,
+        inStock: !!p.is_in_stock,
+        purchasable: !!p.is_purchasable,
+        image: firstImage(p),
+        categories: cats,
+        price: parsePrice(p.prices),
+        currency: (p.prices && p.prices.currency_code) || "AUD"
+      };
+      const source = varsByParent[p.id] || [];
+      if ((p.type === "variable" || p.has_options) && source.length) {
+        const declared = p.variations || [];
+        entry.variations = source.map((varn) => {
+          const dec = declared.find((d) => d.id === varn.id);
+          let label = null;
+          if (dec && dec.attributes && dec.attributes.length) {
+            label = dec.attributes.map((a) => cleanText(a.value || a.name)).filter(Boolean).join(" / ");
+          } else if (varn.variation && String(varn.variation).includes(":")) {
+            label = cleanText(String(varn.variation).split(":").slice(1).join(":"));
+          }
+          return {
+            id: varn.id,
+            label,
+            price: parsePrice(varn.prices),
+            image: firstImage(varn) || entry.image,
+            inStock: !!varn.is_in_stock,
+            purchasable: !!varn.is_purchasable,
+            permalink: varn.permalink || entry.permalink
+          };
+        });
+        const prices = entry.variations.map((v) => v.price).filter((n) => n != null);
+        if (prices.length) {
+          entry.price = Math.min(...prices);
+          entry.maxPrice = Math.max(...prices);
+        }
+        entry.inStock = entry.variations.some((v) => v.inStock);
+      }
+      return entry;
+    }
+
+    async function fetchPages(extra) {
+      const all = [];
+      let page = 1, total = 1;
+      while (page <= total) {
+        const url = API + "?per_page=100&page=" + page + (extra ? "&" + extra : "");
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        total = Number(res.headers.get("X-WP-TotalPages") || "1");
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error("Bad catalogue");
+        all.push(...data);
+        page += 1;
+      }
+      return all;
+    }
+
+    async function tryLiveCatalogue() {
+      const products = await fetchPages("");
+      let variations = [];
+      try { variations = await fetchPages("type=variation"); } catch (e) { variations = []; }
+      const varsByParent = {};
+      variations.forEach((v) => {
+        (varsByParent[v.parent] || (varsByParent[v.parent] = [])).push(v);
+      });
+      return products.filter((p) => p.type !== "variation").map((p) => normalizeApiProduct(p, varsByParent));
+    }
+
+    async function loadCatalogue() {
+      try {
+        const live = await tryLiveCatalogue();
+        if (live && live.length) {
+          PRODUCTS = live;
+          SOURCE = "live";
+          FETCHED_AT = new Date().toISOString();
+          return;
+        }
+      } catch (e) { /* CORS or network: use snapshot */ }
+      const res = await fetch("products.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("Could not load products.json");
+      const data = await res.json();
+      PRODUCTS = data.products || [];
+      SOURCE = "snapshot";
+      FETCHED_AT = data.fetched || "";
+    }
+
+    function openExternal(url) {
+      if (tg && typeof tg.openLink === "function") tg.openLink(url);
+      else window.open(url, "_blank", "noopener");
+    }
+
+    function showView(name) {
+      document.querySelectorAll(".view").forEach((v) => v.classList.toggle("on", v.dataset.view === name));
+      if (name !== "grid") closeCart();
+      updateChrome();
+    }
+
+    function categories() {
+      const set = new Set();
+      PRODUCTS.forEach((p) => (p.categories || []).forEach((c) => set.add(c)));
+      return ["All", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+    }
+
+    function filtered() {
+      const q = query.trim().toLowerCase();
+      return PRODUCTS.filter((p) => {
+        if (category !== "All" && !(p.categories || []).includes(category)) return false;
+        if (!q) return true;
+        const hay = [p.name, p.officialName, ...(p.categories || []), ...(p.variations || []).map((v) => v.label || "")].join(" ").toLowerCase();
+        return hay.includes(q);
+      });
+    }
+
+    function renderFilters() {
+      document.getElementById("filters").innerHTML = categories().map((c) =>
+        `<button type="button" class="filter${c === category ? " on" : ""}" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`
+      ).join("");
+    }
+
+    function renderGrid() {
+      const list = filtered();
+      const asAt = SOURCE === "snapshot" && FETCHED_AT
+        ? " Prices as at " + formatFetched(FETCHED_AT) + "."
+        : SOURCE === "live" ? " Live from the PurePeps store." : "";
+      document.getElementById("countLine").textContent =
+        (list.length === 1 ? "1 product" : list.length + " products") +
+        (query || category !== "All" ? " in this view." : " in the catalogue.") + asAt;
+      const grid = document.getElementById("grid");
+      if (!list.length) {
+        grid.innerHTML = '<div class="status" style="grid-column:1/-1">No products match that search.</div>';
+        return;
+      }
+      grid.innerHTML = list.map((p) => {
+        const from = hasRange(p) ? '<span class="from">From</span>' : "";
+        const oos = !p.inStock;
+        const img = p.image ? `<img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy" decoding="async">` : "";
+        return `<button class="card${oos ? " oos" : ""}" type="button" data-open="${p.id}">
+          <div class="plate">${img}${oos ? '<span class="stock-tag">Out of stock</span>' : ""}</div>
+          <div class="card-body">
+            <h2>${escapeHtml(p.name)}</h2>
+            <div class="price">${from}${moneyShort(minPrice(p))}</div>
+            <div class="ruo">For research use only</div>
+          </div>
+        </button>`;
+      }).join("");
+    }
+
+    function formatFetched(iso) {
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return iso;
+      return d.toLocaleString("en-AU", { timeZone: "Australia/Sydney", day: "numeric", month: "short", year: "numeric" });
+    }
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    function openProduct(id) {
+      const p = byId(id);
+      if (!p) return;
+      currentId = id;
+      const firstIn = (p.variations || []).find((v) => v.inStock);
+      selectedVar = p.variations && p.variations.length
+        ? (firstIn ? firstIn.id : p.variations[0].id)
+        : p.id;
+      qty = 1;
+      renderDetail();
+      showView("detail");
+      history.replaceState(null, "", "#product/" + id);
+    }
+
+    function currentChoice() {
+      const p = byId(currentId);
+      if (!p) return null;
+      if (p.variations && p.variations.length) {
+        const v = variationOf(p, selectedVar) || p.variations[0];
+        return { product: p, cartId: v.id, label: v.label, price: v.price, image: v.image || p.image, inStock: v.inStock, purchasable: v.purchasable };
+      }
+      return { product: p, cartId: p.id, label: null, price: p.price, image: p.image, inStock: p.inStock, purchasable: p.purchasable };
+    }
+
+    function renderDetail() {
+      const c = currentChoice();
+      if (!c) return;
+      const p = c.product;
+      const sizes = (p.variations && p.variations.length) ? `
+        <div class="label">Size</div>
+        <div class="sizes">
+          ${p.variations.map((v) => `<button type="button" class="chip${v.id === selectedVar ? " on" : ""}${v.inStock ? "" : " oos"}" data-var="${v.id}">${escapeHtml(v.label || "Option")}</button>`).join("")}
+        </div>` : "";
+      const canAdd = c.inStock && c.purchasable && c.price != null;
+      const action = canAdd
+        ? `<div class="label">Quantity</div>
+           <div class="qty-row">
+             <div class="stepper">
+               <button type="button" data-qty="-1" aria-label="Decrease">-</button>
+               <span id="qtyVal">${qty}</span>
+               <button type="button" data-qty="1" aria-label="Increase">+</button>
+             </div>
+           </div>
+           <button class="btn btn-primary" type="button" id="addBtn">Add to cart</button>`
+        : `<div class="oos-note">Out of stock. This size cannot be added to your cart.</div>`;
+      const img = c.image ? `<img src="${c.image}" alt="${escapeHtml(p.name)}">` : "";
+      document.getElementById("detail").innerHTML = `
+        <div class="detail-plate">${img}</div>
+        <h1>${escapeHtml(p.name)}</h1>
+        <div class="official">${escapeHtml(p.officialName)}</div>
+        <div class="price">${c.price != null ? money(c.price) : ""}</div>
+        <div class="ruo">For research use only</div>
+        ${sizes}
+        ${action}
+      `;
+    }
+
+    function addCurrent() {
+      const c = currentChoice();
+      if (!c || !c.inStock || c.price == null) return;
+      const existing = cart.find((i) => i.cartId === c.cartId);
+      if (existing) existing.qty += qty;
+      else cart.push({
+        cartId: c.cartId,
+        productId: c.product.id,
+        name: c.product.name,
+        officialName: c.product.officialName,
+        label: c.label,
+        price: c.price,
+        image: c.image,
+        qty
+      });
+      saveCart();
+      updateChrome();
+      toast("Added to cart");
+    }
+
+    function renderCart() {
+      const body = document.getElementById("cartBody");
+      const foot = document.getElementById("cartFoot");
+      if (!cart.length) {
+        body.innerHTML = '<div class="empty">Your cart is empty.</div>';
+        foot.innerHTML = "";
+        return;
+      }
+      body.innerHTML = cart.map((i) => `
+        <div class="line">
+          <div class="thumb">${i.image ? `<img src="${i.image}" alt="">` : ""}</div>
+          <div>
+            <h3>${escapeHtml(i.name)}</h3>
+            <div class="meta">${i.label ? escapeHtml(i.label) + " · " : ""}For research use only</div>
+            <div class="stepper" data-line="${i.cartId}">
+              <button type="button" data-adj="-1" aria-label="Decrease">-</button>
+              <span>${i.qty}</span>
+              <button type="button" data-adj="1" aria-label="Increase">+</button>
+            </div>
+          </div>
+          <div class="right">
+            <div class="price">${moneyShort(i.price * i.qty)}</div>
+            <button class="remove" type="button" data-remove="${i.cartId}">Remove</button>
+          </div>
+        </div>
+      `).join("");
+      foot.innerHTML = `
+        <div class="tot"><span>Total</span><b>${money(cartTotal())}</b></div>
+        <button class="btn btn-primary" type="button" id="drawerCheckout">Checkout</button>
+      `;
+    }
+
+    function itemUrl(item) {
+      return STORE + "/?add-to-cart=" + item.cartId + "&quantity=" + item.qty;
+    }
+    function firstCheckoutUrl() {
+      if (!cart.length) return "";
+      return itemUrl(cart[0]);
+    }
+    function multiSnippetUrl() {
+      if (cart.length <= 1) return firstCheckoutUrl();
+      const ids = cart.map((i) => i.cartId).join(",");
+      const qtys = cart.map((i) => i.qty).join(",");
+      return STORE + "/?add-to-cart=" + ids + "&quantities=" + qtys;
+    }
+
+    function renderCheckout() {
+      if (!cart.length) { showView("grid"); history.replaceState(null, "", "#shop"); return; }
+      const multi = cart.length > 1;
+      const openUrl = firstCheckoutUrl();
+      const rows = cart.map((i) => `
+        <div class="row">
+          <span>${escapeHtml(i.name)}${i.label ? " · " + escapeHtml(i.label) : ""} × ${i.qty}</span>
+          <span>${moneyShort(i.price * i.qty)}</span>
+        </div>`).join("") + `
+        <div class="row"><span>Total (AUD)</span><span>${money(cartTotal())}</span></div>`;
+      const remain = multi ? `
+        <div class="note">WooCommerce will add the first item from this link. A small snippet on the PurePeps site is still needed before a full cart can be sent in one go. Until then, add the other items on the site with the links below, then pay there.</div>
+        <div class="url-label">Opens first with</div>
+        <div class="url-box">${prettyUrl(openUrl)}</div>
+        <div class="url-label">Still to add on the site</div>
+        <div class="remain">
+          ${cart.slice(1).map((i) => `<button type="button" class="linkish" data-open-url="${itemUrl(i)}">Add ${escapeHtml(i.name)}${i.label ? " · " + escapeHtml(i.label) : ""} × ${i.qty}</button>`).join("")}
+        </div>
+        <div class="url-label">Full cart link (needs the site snippet)</div>
+        <div class="url-box">${prettyUrl(multiSnippetUrl())}</div>` : `
+        <div class="note">This single-item link already works on the PurePeps site. It adds the item and quantity, then you pay there as usual.</div>
+        <div class="url-label">Site cart link</div>
+        <div class="url-box">${prettyUrl(openUrl)}</div>`;
+      document.getElementById("confirm").innerHTML = `
+        <h1>Ready to pay on the PurePeps site</h1>
+        <p class="lead">Nothing has been sent yet. Continue to checkout opens your cart on purepeps.com.au. Payment stays on the site.</p>
+        <div class="confirm-list">${rows}</div>
+        ${remain}
+        <p class="ruo">Every product is for research use only.</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button" id="continueCheckout">Continue to checkout</button>
+          <button class="btn btn-ghost" type="button" id="copyUrl">Copy link</button>
+        </div>
+      `;
+    }
+
+    function openCheckout() {
+      if (!cart.length) { openCart(); return; }
+      closeCart();
+      renderCheckout();
+      showView("checkout");
+      history.replaceState(null, "", "#checkout");
+      updateChrome();
+    }
+    function openCart() {
+      renderCart();
+      document.getElementById("drawer").classList.add("on");
+      document.getElementById("drawerBg").classList.add("on");
+    }
+    function closeCart() {
+      document.getElementById("drawer").classList.remove("on");
+      document.getElementById("drawerBg").classList.remove("on");
+    }
+    function updateChrome() {
+      const n = cartCount();
+      const badge = document.getElementById("cartBadge");
+      badge.textContent = n;
+      badge.classList.toggle("on", n > 0);
+      const sticky = document.getElementById("sticky");
+      const onCheckout = document.getElementById("view-checkout").classList.contains("on");
+      sticky.classList.toggle("on", n > 0 && !onCheckout && !document.body.classList.contains("in-telegram"));
+      document.getElementById("stickyCount").textContent = n === 1 ? "1 item" : n + " items";
+      document.getElementById("stickyTotal").textContent = money(cartTotal());
+      syncMainButton();
+    }
+    function syncMainButton() {
+      if (!tg || !tg.MainButton) return;
+      const n = cartCount();
+      const onCheckout = document.getElementById("view-checkout").classList.contains("on");
+      try {
+        tg.MainButton.setParams({
+          text: onCheckout ? "Continue to checkout" : "Checkout",
+          color: "#22c3c9",
+          text_color: "#03141c"
+        });
+        if (n > 0) tg.MainButton.show();
+        else tg.MainButton.hide();
+      } catch (e) {}
+    }
+    function toast(msg) {
+      const el = document.getElementById("toast");
+      el.textContent = msg;
+      el.classList.add("on");
+      clearTimeout(toast._t);
+      toast._t = setTimeout(() => el.classList.remove("on"), 1500);
+    }
+    function routeFromHash() {
+      const h = (location.hash || "").replace(/^#/, "");
+      if (h.startsWith("product/")) {
+        const id = Number(h.split("/")[1]);
+        if (byId(id)) { openProduct(id); return; }
+      }
+      if (h === "checkout") { openCheckout(); return; }
+      if (h === "cart") { showView("grid"); openCart(); return; }
+      showView("grid");
+      if (location.hash !== "#shop") history.replaceState(null, "", "#shop");
+    }
+
+    document.getElementById("q").addEventListener("input", (e) => {
+      query = e.target.value;
+      renderGrid();
+    });
+    document.getElementById("filters").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-cat]");
+      if (!btn) return;
+      category = btn.dataset.cat;
+      renderFilters();
+      renderGrid();
+    });
+    document.getElementById("grid").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-open]");
+      if (btn) openProduct(Number(btn.dataset.open));
+    });
+    document.getElementById("detail").addEventListener("click", (e) => {
+      const chip = e.target.closest("[data-var]");
+      if (chip) { selectedVar = Number(chip.dataset.var); renderDetail(); return; }
+      const step = e.target.closest("[data-qty]");
+      if (step) {
+        qty = Math.max(1, qty + Number(step.dataset.qty));
+        const el = document.getElementById("qtyVal");
+        if (el) el.textContent = qty;
+        return;
+      }
+      if (e.target.id === "addBtn") addCurrent();
+    });
+    document.getElementById("cartBody").addEventListener("click", (e) => {
+      const rem = e.target.closest("[data-remove]");
+      if (rem) {
+        cart = cart.filter((i) => i.cartId !== Number(rem.dataset.remove));
+        saveCart(); renderCart(); updateChrome(); return;
+      }
+      const adj = e.target.closest("[data-adj]");
+      if (adj) {
+        const id = Number(adj.closest("[data-line]").dataset.line);
+        const item = cart.find((i) => i.cartId === id);
+        if (!item) return;
+        item.qty = Math.max(1, item.qty + Number(adj.dataset.adj));
+        saveCart(); renderCart(); updateChrome();
+      }
+    });
+    document.getElementById("cartFoot").addEventListener("click", (e) => {
+      if (e.target.id === "drawerCheckout") openCheckout();
+    });
+    document.getElementById("confirm").addEventListener("click", (e) => {
+      const extra = e.target.closest("[data-open-url]");
+      if (extra) { openExternal(extra.dataset.openUrl); return; }
+      if (e.target.id === "continueCheckout") {
+        const url = firstCheckoutUrl();
+        if (url) openExternal(url);
+        return;
+      }
+      if (e.target.id === "copyUrl") {
+        const url = cart.length > 1 ? multiSnippetUrl() : firstCheckoutUrl();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(() => toast("Link copied")).catch(() => toast("Copy the link above"));
+        } else toast("Copy the link above");
+      }
+    });
+    document.getElementById("backToGrid").addEventListener("click", () => { showView("grid"); history.replaceState(null, "", "#shop"); });
+    document.getElementById("backFromCheckout").addEventListener("click", () => { showView("grid"); history.replaceState(null, "", "#shop"); });
+    document.getElementById("cartBtn").addEventListener("click", openCart);
+    document.getElementById("closeCart").addEventListener("click", closeCart);
+    document.getElementById("drawerBg").addEventListener("click", closeCart);
+    document.getElementById("stickyCheckout").addEventListener("click", openCheckout);
+
+    if (tg) {
+      try {
+        tg.ready();
+        tg.expand();
+        if (tg.setHeaderColor) tg.setHeaderColor("#040b14");
+        if (tg.setBackgroundColor) tg.setBackgroundColor("#040b14");
+        if (tg.disableVerticalSwipes) tg.disableVerticalSwipes();
+      } catch (e) {}
+      if (tg.platform && tg.platform !== "unknown") document.body.classList.add("in-telegram");
+      if (tg.MainButton) {
+        tg.MainButton.onClick(() => {
+          const onCheckout = document.getElementById("view-checkout").classList.contains("on");
+          if (onCheckout) {
+            const url = firstCheckoutUrl();
+            if (url) openExternal(url);
+          } else openCheckout();
+        });
+      }
+    }
+
+    loadCatalogue().then(() => {
+      renderFilters();
+      renderGrid();
+      updateChrome();
+      routeFromHash();
+      window.addEventListener("hashchange", routeFromHash);
+    }).catch(() => {
+      document.getElementById("grid").innerHTML = '<div class="status" style="grid-column:1/-1">The catalogue could not be loaded. Check your connection and try again.</div>';
+    });
+  </script>
+</body>
+</html>
