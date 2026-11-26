@@ -182,22 +182,53 @@
     .search:focus { border-color: var(--black); }
     .search::placeholder { color: #999; }
 
+    .shop-tools {
+      position: sticky;
+      top: calc(var(--header-h) + var(--safe-top));
+      z-index: 40;
+      background: #fff;
+      margin: 0 calc(var(--pad) * -1);
+      padding: 8px var(--pad) 0;
+      border-bottom: 1px solid #eee;
+    }
+    .chips-bar {
+      position: relative;
+      margin: 0 calc(var(--pad) * -1);
+    }
+    .chips-bar::before,
+    .chips-bar::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 36px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+    .chips-bar::before {
+      left: 0;
+      background: linear-gradient(to right, #fff, rgba(255,255,255,0));
+    }
+    .chips-bar::after {
+      right: 0;
+      background: linear-gradient(to left, #fff, rgba(255,255,255,0));
+    }
+    .chips-bar.fade-left::before,
+    .chips-bar.fade-right::after { opacity: 1; }
     .chips-wrap {
       display: flex;
       gap: 0;
       overflow-x: auto;
-      padding: 0 0 12px;
-      margin: 0 calc(var(--pad) * -1);
-      padding-left: var(--pad);
-      padding-right: var(--pad);
+      padding: 0 8px 10px;
       scrollbar-width: none;
-      border-bottom: 1px solid #eee;
     }
     .chips-wrap::-webkit-scrollbar { display: none; }
     .filter {
       flex: 0 0 auto;
       height: 36px;
-      padding: 0 12px;
+      padding: 0 8px;
       border-radius: 0;
       border: 0;
       background: transparent;
@@ -205,7 +236,7 @@
       font-family: var(--font-body);
       font-weight: 700;
       font-size: 11px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       white-space: nowrap;
       border-bottom: 2px solid transparent;
@@ -219,7 +250,37 @@
       font-family: var(--font-body);
       font-size: 12px;
       font-weight: 500;
-      margin: 12px 0 14px;
+      margin: 12px 0 8px;
+    }
+
+    .catalogue {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .cat-section { min-width: 0; }
+    .cat-heading {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1.2;
+      color: var(--black);
+      padding: 18px 0 12px;
+      border-top: 1px solid #eee;
+      margin: 4px 0 0;
+    }
+    .cat-section:first-child .cat-heading {
+      border-top: 0;
+      padding-top: 8px;
+      margin-top: 0;
+    }
+    .cat-heading .cat-count {
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--text-soft);
+      margin-left: 8px;
+      letter-spacing: 0;
     }
 
     .grid {
@@ -428,7 +489,7 @@
       font-family: var(--font-body);
     }
     .stepper span {
-      min-width: 28px;
+      min-width: 36px;
       text-align: center;
       font-family: var(--font-body);
       font-weight: 700;
@@ -755,10 +816,14 @@
       <section class="view on" id="view-grid" data-view="grid">
         <h1 class="page-title">Shop</h1>
         <label class="sr" for="q" style="position:absolute;left:-9999px">Search products</label>
-        <input class="search" id="q" type="search" placeholder="Search products" autocomplete="off">
-        <div class="chips-wrap" id="filters"></div>
+        <div class="shop-tools">
+          <input class="search" id="q" type="search" placeholder="Search products" autocomplete="off">
+          <div class="chips-bar" id="chipsBar">
+            <div class="chips-wrap" id="filters"></div>
+          </div>
+        </div>
         <div class="count-line" id="countLine"></div>
-        <div class="grid" id="grid"><div class="status">Loading the catalogue.</div></div>
+        <div class="catalogue" id="grid"><div class="status">Loading the catalogue.</div></div>
       </section>
 
       <section class="view" id="view-detail" data-view="detail">
@@ -819,6 +884,20 @@
     let qty = 1;
     let query = "";
     let category = "All";
+
+    const SHOP_CATEGORIES = [
+      { id: "peptides", label: "Peptides", woo: "Peptides" },
+      { id: "stacks", label: "Stacks & Blends", woo: "Stacks & Blends" },
+      { id: "bulk", label: "Bulk Peptide Packs", woo: "Bulk Peptide Packs" },
+      { id: "accessories", label: "Accessories & Essentials", woo: "Accessories & Essentials" }
+    ];
+    // Default (menu_order) product order from each category page on purepeps.com.au, 26 Nov 2026.
+    const SITE_ORDER = {
+      peptides: [2544,3008,9966,8788,16257,2564,6906,2604,3001,2511,5627,61073,3031,58138,2579,2999,2555,5926,2574,46584,2582,3883,2520,22215,3431,2525,2599,3308,58146,46577,2558,2561,3006,2587,2595,5622,2528,2539,2532,48902,3253,3249,48897,2565,2598,3004,2460,2571,9980,2570,2548,16254,2485,2516,10315,2552,3881,2592,61080,61086,3885,67028,10074,6427,3925,3748,7752,7724,4336,3691,3936,5363,3744,3721,3933,3737,4326,7772,3731,5487,5493,9986,7178,11766,7650,7696,7699,7703,7706,7715,7727,7732,7741,7760,7763,12575,12583,54551,54563,43769,61717,61729],
+      stacks: [3001,2999,2525,3006,9980,10315,3748,3744,7772,3731,9986,11766],
+      accessories: [3008,2604,61736,17281,59798,28935,40848,3304,3010,16700,40911,3012,3134,3179,3815,3820,3824,3832,47318],
+      bulk: [61736,10074,6427,3925,3748,7752,7724,4336,3691,3936,5363,3744,3721,3933,3737,4326,7772,3731,5487,5493,9986,7178,11766,7650,7696,7699,7703,7706,7715,7727,7732,7741,7760,7763,12575,12583,54551,54563,43769,61717,61729]
+    };
 
     try {
       const saved = JSON.parse(localStorage.getItem("ppa-shop-cart-v2") || "[]");
@@ -994,47 +1073,63 @@
       updateChrome();
     }
 
+    function hasWooCategory(p, wooName) {
+      const want = String(wooName || "").toLowerCase();
+      return (p.categories || []).some((c) => String(c).toLowerCase() === want);
+    }
+
+    function primaryCategory(p) {
+      // Exclusive home so 10-packs and accessories are not mixed into Peptides.
+      // Bulk first, matching the site's Bulk Peptide Packs category.
+      if (hasWooCategory(p, "Bulk Peptide Packs")) return SHOP_CATEGORIES[2];
+      if (hasWooCategory(p, "Stacks & Blends")) return SHOP_CATEGORIES[1];
+      if (hasWooCategory(p, "Accessories & Essentials")) return SHOP_CATEGORIES[3];
+      if (hasWooCategory(p, "Peptides")) return SHOP_CATEGORIES[0];
+      return null;
+    }
+
     function categories() {
-      const set = new Set();
-      PRODUCTS.forEach((p) => (p.categories || []).forEach((c) => set.add(c)));
-      return ["All", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+      return ["All", ...SHOP_CATEGORIES.map((c) => c.label)];
+    }
+
+    function siteIndex(catId, productId) {
+      const arr = SITE_ORDER[catId] || [];
+      const i = arr.indexOf(productId);
+      return i === -1 ? 10000 : i;
+    }
+
+    function sortInCategory(list, catId) {
+      return list.slice().sort((a, b) => {
+        const ia = siteIndex(catId, a.id);
+        const ib = siteIndex(catId, b.id);
+        if (ia !== ib) return ia - ib;
+        return a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+      });
+    }
+
+    function matchesQuery(p, q) {
+      if (!q) return true;
+      const hay = [p.name, p.officialName, ...(p.categories || []), ...(p.variations || []).map((v) => v.label || "")].join(" ").toLowerCase();
+      return hay.includes(q);
     }
 
     function filtered() {
       const q = query.trim().toLowerCase();
       return PRODUCTS.filter((p) => {
-        if (category !== "All" && !(p.categories || []).includes(category)) return false;
-        if (!q) return true;
-        const hay = [p.name, p.officialName, ...(p.categories || []), ...(p.variations || []).map((v) => v.label || "")].join(" ").toLowerCase();
-        return hay.includes(q);
+        if (category !== "All") {
+          const primary = primaryCategory(p);
+          if (!primary || primary.label !== category) return false;
+        }
+        return matchesQuery(p, q);
       });
     }
 
-    function renderFilters() {
-      document.getElementById("filters").innerHTML = categories().map((c) =>
-        `<button type="button" class="filter${c === category ? " on" : ""}" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`
-      ).join("");
-    }
-
-    function renderGrid() {
-      const list = filtered();
-      const asAt = SOURCE === "snapshot" && FETCHED_AT
-        ? " Catalogue as at " + formatFetched(FETCHED_AT) + "."
-        : SOURCE === "live" ? " Live from the PurePeps store." : "";
-      document.getElementById("countLine").textContent =
-        (list.length === 1 ? "1 product" : list.length + " products") +
-        (query || category !== "All" ? " in this view." : ".") + asAt;
-      const grid = document.getElementById("grid");
-      if (!list.length) {
-        grid.innerHTML = '<div class="status" style="grid-column:1/-1">No products match that search.</div>';
-        return;
-      }
-      grid.innerHTML = list.map((p) => {
-        const from = hasRange(p) ? '<span class="from">From</span>' : "";
-        const oos = !p.inStock;
-        const img = p.image ? `<img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy" decoding="async">` : "";
-        const cta = oos ? "Out of stock" : "Add to cart";
-        return `<div class="card${oos ? " oos" : ""}" data-open="${p.id}">
+    function productCard(p) {
+      const from = hasRange(p) ? '<span class="from">From</span>' : "";
+      const oos = !p.inStock;
+      const img = p.image ? `<img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy" decoding="async">` : "";
+      const cta = oos ? "Out of stock" : "Add to cart";
+      return `<div class="card${oos ? " oos" : ""}" data-open="${p.id}">
           <button type="button" class="plate" data-open="${p.id}" aria-label="${escapeHtml(p.name)}">${img}${oos ? '<span class="stock-tag">Out of stock</span>' : ""}</button>
           <div class="card-body">
             <h2><button type="button" data-open="${p.id}">${escapeHtml(p.name)}</button></h2>
@@ -1043,6 +1138,96 @@
             <button type="button" class="card-cta" data-open="${p.id}">${cta}</button>
           </div>
         </div>`;
+    }
+
+    function updateChipFade() {
+      const wrap = document.getElementById("filters");
+      const bar = document.getElementById("chipsBar");
+      if (!wrap || !bar) return;
+      const max = wrap.scrollWidth - wrap.clientWidth - 1;
+      bar.classList.toggle("fade-left", wrap.scrollLeft > 2);
+      bar.classList.toggle("fade-right", wrap.scrollLeft < max);
+    }
+
+    function chipOffsetLeft(wrap, chip) {
+      return chip.getBoundingClientRect().left - wrap.getBoundingClientRect().left + wrap.scrollLeft;
+    }
+
+    function scrollActiveChip() {
+      const wrap = document.getElementById("filters");
+      const on = wrap && wrap.querySelector(".filter.on");
+      if (!wrap || !on) return;
+      const pad = 8;
+      wrap.style.paddingRight = pad + "px";
+      const chips = Array.from(wrap.querySelectorAll(".filter")).map((chip) => {
+        const left = chipOffsetLeft(wrap, chip);
+        return { chip, left, right: left + chip.offsetWidth };
+      });
+      const active = chips.find((item) => item.chip === on);
+      let scroll = 0;
+      if (active.left - pad < scroll) scroll = Math.max(0, active.left - pad);
+      else if (active.right + pad > scroll + wrap.clientWidth) {
+        scroll = active.right + pad - wrap.clientWidth;
+      }
+      chips.forEach((item) => {
+        if (item.chip === on) return;
+        const visLeft = item.left - scroll;
+        const visRight = item.right - scroll;
+        if (visLeft < -2 && visRight > 8 && active.right + pad - item.right <= wrap.clientWidth) {
+          scroll = item.right;
+        }
+      });
+      scroll = Math.max(0, scroll);
+      const max = Math.max(0, wrap.scrollWidth - wrap.clientWidth);
+      if (scroll > max) {
+        wrap.style.paddingRight = (pad + (scroll - max)) + "px";
+      }
+      wrap.scrollLeft = scroll;
+      updateChipFade();
+    }
+
+    function renderFilters() {
+      document.getElementById("filters").innerHTML = categories().map((c) =>
+        `<button type="button" class="filter${c === category ? " on" : ""}" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`
+      ).join("");
+      scrollActiveChip();
+    }
+
+    function renderGrid() {
+      const q = query.trim().toLowerCase();
+      const asAt = SOURCE === "snapshot" && FETCHED_AT
+        ? " Catalogue as at " + formatFetched(FETCHED_AT) + "."
+        : SOURCE === "live" ? " Live from the PurePeps store." : "";
+      const sections = SHOP_CATEGORIES
+        .filter((cat) => category === "All" || category === cat.label)
+        .map((cat) => {
+          const items = sortInCategory(
+            PRODUCTS.filter((p) => {
+              const primary = primaryCategory(p);
+              return primary && primary.id === cat.id && matchesQuery(p, q);
+            }),
+            cat.id
+          );
+          return { cat, items };
+        })
+        .filter((section) => section.items.length);
+
+      const total = sections.reduce((sum, section) => sum + section.items.length, 0);
+      document.getElementById("countLine").textContent =
+        (total === 1 ? "1 product" : total + " products") +
+        (query || category !== "All" ? " in this view." : ".") + asAt;
+
+      const grid = document.getElementById("grid");
+      if (!sections.length) {
+        grid.innerHTML = '<div class="status">No products match that search.</div>';
+        return;
+      }
+      grid.innerHTML = sections.map(({ cat, items }) => {
+        const count = items.length === 1 ? "1 product" : items.length + " products";
+        return `<section class="cat-section" data-cat-id="${escapeHtml(cat.id)}">
+          <h2 class="cat-heading">${escapeHtml(cat.label)}<span class="cat-count">${count}</span></h2>
+          <div class="grid">${items.map(productCard).join("")}</div>
+        </section>`;
       }).join("");
     }
 
@@ -1284,12 +1469,15 @@
       query = e.target.value;
       renderGrid();
     });
+    document.getElementById("filters").addEventListener("scroll", updateChipFade, { passive: true });
+    window.addEventListener("resize", updateChipFade);
     document.getElementById("filters").addEventListener("click", (e) => {
       const btn = e.target.closest("[data-cat]");
       if (!btn) return;
       category = btn.dataset.cat;
       renderFilters();
       renderGrid();
+      window.scrollTo(0, 0);
     });
     document.getElementById("grid").addEventListener("click", (e) => {
       const btn = e.target.closest("[data-open]");
