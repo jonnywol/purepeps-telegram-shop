@@ -1364,34 +1364,25 @@
       return STORE + "/?add-to-cart=" + ids + "&quantities=" + qtys;
     }
 
+    function checkoutUrl() {
+      return multiSnippetUrl();
+    }
+
     function renderCheckout() {
       if (!cart.length) { showView("grid"); history.replaceState(null, "", "#shop"); return; }
-      const multi = cart.length > 1;
-      const openUrl = firstCheckoutUrl();
+      const openUrl = checkoutUrl();
       const rows = cart.map((i) => `
         <div class="row">
           <span>${escapeHtml(i.name)}${i.label ? " · " + escapeHtml(i.label) : ""} × ${i.qty}</span>
           <span>${moneyShort(i.price * i.qty)}</span>
         </div>`).join("") + `
         <div class="row"><span>Total (AUD)</span><span>${money(cartTotal())}</span></div>`;
-      const remain = multi ? `
-        <div class="note">WooCommerce will add the first item from this link. A small snippet on the PurePeps site is still needed before a full cart can be sent in one go. Until then, add the other items on the site with the links below, then pay there.</div>
-        <div class="url-label">Opens first with</div>
-        <div class="url-box">${prettyUrl(openUrl)}</div>
-        <div class="url-label">Still to add on the site</div>
-        <div class="remain">
-          ${cart.slice(1).map((i) => `<button type="button" class="linkish" data-open-url="${itemUrl(i)}">Add ${escapeHtml(i.name)}${i.label ? " · " + escapeHtml(i.label) : ""} × ${i.qty}</button>`).join("")}
-        </div>
-        <div class="url-label">Full cart link (needs the site snippet)</div>
-        <div class="url-box">${prettyUrl(multiSnippetUrl())}</div>` : `
-        <div class="note">This single-item link already works on the PurePeps site. It adds the item and quantity, then you pay there as usual.</div>
-        <div class="url-label">Site cart link</div>
-        <div class="url-box">${prettyUrl(openUrl)}</div>`;
       document.getElementById("confirm").innerHTML = `
         <h1>Ready to pay on the PurePeps site</h1>
-        <p class="lead">Nothing has been sent yet. Continue to checkout opens your cart on purepeps.com.au. Payment stays on the site.</p>
+        <p class="lead">Nothing has been sent yet. Continue to checkout opens your cart on purepeps.com.au, with every item included. Payment stays on the site.</p>
         <div class="confirm-list">${rows}</div>
-        ${remain}
+        <div class="url-label">Site cart link</div>
+        <div class="url-box">${prettyUrl(openUrl)}</div>
         <p class="ruo">Every product is for research use only.</p>
         <div class="actions">
           <button class="btn btn-primary" type="button" id="continueCheckout">Continue to checkout</button>
@@ -1517,12 +1508,12 @@
       const extra = e.target.closest("[data-open-url]");
       if (extra) { openExternal(extra.dataset.openUrl); return; }
       if (e.target.id === "continueCheckout") {
-        const url = firstCheckoutUrl();
+        const url = checkoutUrl();
         if (url) openExternal(url);
         return;
       }
       if (e.target.id === "copyUrl") {
-        const url = cart.length > 1 ? multiSnippetUrl() : firstCheckoutUrl();
+        const url = checkoutUrl();
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(url).then(() => toast("Link copied")).catch(() => toast("Copy the link above"));
         } else toast("Copy the link above");
@@ -1552,7 +1543,7 @@
         tg.MainButton.onClick(() => {
           const onCheckout = document.getElementById("view-checkout").classList.contains("on");
           if (onCheckout) {
-            const url = firstCheckoutUrl();
+            const url = checkoutUrl();
             if (url) openExternal(url);
           } else openCheckout();
         });
