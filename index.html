@@ -378,7 +378,12 @@
       background: none;
       width: 100%;
     }
-    .card.oos .card-cta { color: var(--text); }
+    .card-cta.added { color: var(--black); }
+    .card-cta:disabled,
+    .card.oos .card-cta {
+      color: var(--text);
+      cursor: not-allowed;
+    }
 
     .back-row { display: none; }
     .back-row button {
@@ -1124,18 +1129,63 @@
       });
     }
 
+    function gridAction(p) {
+      if (!p || !p.inStock) return { kind: "soldout" };
+      if (p.variations && p.variations.length) {
+        const ready = p.variations.filter((v) => v.inStock && v.purchasable && v.price != null);
+        if (ready.length > 1) return { kind: "options" };
+        if (ready.length === 1) {
+          const v = ready[0];
+          return {
+            kind: "add",
+            choice: {
+              product: p,
+              cartId: v.id,
+              label: v.label,
+              price: v.price,
+              image: v.image || p.image,
+              inStock: true,
+              purchasable: true
+            }
+          };
+        }
+        return { kind: "soldout" };
+      }
+      if (!p.purchasable || p.price == null) return { kind: "soldout" };
+      return {
+        kind: "add",
+        choice: {
+          product: p,
+          cartId: p.id,
+          label: null,
+          price: p.price,
+          image: p.image,
+          inStock: true,
+          purchasable: true
+        }
+      };
+    }
+
     function productCard(p) {
       const from = hasRange(p) ? '<span class="from">From</span>' : "";
-      const oos = !p.inStock;
+      const action = gridAction(p);
+      const oos = action.kind === "soldout";
       const img = p.image ? `<img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy" decoding="async">` : "";
-      const cta = oos ? "Out of stock" : "Add to cart";
+      let cta;
+      if (oos) {
+        cta = `<button type="button" class="card-cta" disabled>Sold out</button>`;
+      } else if (action.kind === "options") {
+        cta = `<button type="button" class="card-cta" data-open="${p.id}">Select options</button>`;
+      } else {
+        cta = `<button type="button" class="card-cta" data-add="${p.id}">Add to cart</button>`;
+      }
       return `<div class="card${oos ? " oos" : ""}" data-open="${p.id}">
           <button type="button" class="plate" data-open="${p.id}" aria-label="${escapeHtml(p.name)}">${img}${oos ? '<span class="stock-tag">Out of stock</span>' : ""}</button>
           <div class="card-body">
             <h2><button type="button" data-open="${p.id}">${escapeHtml(p.name)}</button></h2>
             <div class="price">${from}${moneyShort(minPrice(p))}</div>
             <div class="ruo">For research use only</div>
-            <button type="button" class="card-cta" data-open="${p.id}">${cta}</button>
+            ${cta}
           </div>
         </div>`;
     }
@@ -1297,11 +1347,18 @@
       `;
     }
 
-    function addCurrent() {
-      const c = currentChoice();
-      if (!c || !c.inStock || c.price == null) return;
+    function hapticSuccess() {
+      try {
+        if (tg && tg.HapticFeedback && typeof tg.HapticFeedback.notificationOccurred === "function") {
+          tg.HapticFeedback.notificationOccurred("success");
+        }
+      } catch (e) {}
+    }
+
+    function addChoiceToCart(c, addQty) {
+      if (!c || !c.inStock || c.price == null) return false;
       const existing = cart.find((i) => i.cartId === c.cartId);
-      if (existing) existing.qty += qty;
+      if (existing) existing.qty += addQty;
       else cart.push({
         cartId: c.cartId,
         productId: c.product.id,
@@ -1310,11 +1367,36 @@
         label: c.label,
         price: c.price,
         image: c.image,
-        qty
+        qty: addQty
       });
       saveCart();
       updateChrome();
-      toast("Added to cart");
+      hapticSuccess();
+      return true;
+    }
+
+    function addCurrent() {
+      if (addChoiceToCart(currentChoice(), qty)) toast("Added to cart");
+    }
+
+    function flashAdded(btn) {
+      if (!btn) return;
+      btn.textContent = "Added";
+      btn.classList.add("added");
+      clearTimeout(btn._addedTimer);
+      btn._addedTimer = setTimeout(() => {
+        if (btn.isConnected) {
+          btn.textContent = "Add to cart";
+          btn.classList.remove("added");
+        }
+      }, 1500);
+    }
+
+    function addFromGrid(id, btn) {
+      const action = gridAction(byId(id));
+      if (!action || action.kind !== "add") return;
+      if (!addChoiceToCart(action.choice, 1)) return;
+      flashAdded(btn);
     }
 
     function renderCart() {
@@ -1471,8 +1553,16 @@
       window.scrollTo(0, 0);
     });
     document.getElementById("grid").addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-open]");
-      if (btn) openProduct(Number(btn.dataset.open));
+      const addBtn = e.target.closest("[data-add]");
+      if (addBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (addBtn.disabled) return;
+        addFromGrid(Number(addBtn.dataset.add), addBtn);
+        return;
+      }
+      const openBtn = e.target.closest("[data-open]");
+      if (openBtn) openProduct(Number(openBtn.dataset.open));
     });
     document.getElementById("detail").addEventListener("click", (e) => {
       const chip = e.target.closest("[data-var]");
