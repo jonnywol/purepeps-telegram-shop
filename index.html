@@ -1041,9 +1041,22 @@
       FETCHED_AT = data.fetched || "";
     }
 
+    function withUtm(url) {
+      if (!url) return url;
+      const raw = String(url);
+      if (!/purepeps\.com\.au/i.test(raw)) return raw;
+      if (/[?&]utm_source=/i.test(raw)) return raw;
+      const hashAt = raw.indexOf("#");
+      const base = hashAt === -1 ? raw : raw.slice(0, hashAt);
+      const hash = hashAt === -1 ? "" : raw.slice(hashAt);
+      const join = base.indexOf("?") === -1 ? "?" : "&";
+      return base + join + "utm_source=telegram&utm_medium=ppa_shop&utm_campaign=telegram_shop" + hash;
+    }
+
     function openExternal(url) {
-      if (tg && typeof tg.openLink === "function") tg.openLink(url);
-      else window.open(url, "_blank", "noopener");
+      const tagged = withUtm(url);
+      if (tg && typeof tg.openLink === "function") tg.openLink(tagged);
+      else window.open(tagged, "_blank", "noopener");
     }
 
     function currentView() {
@@ -1433,7 +1446,7 @@
     }
 
     function itemUrl(item) {
-      return STORE + "/?add-to-cart=" + item.cartId + "&quantity=" + item.qty;
+      return withUtm(STORE + "/?add-to-cart=" + item.cartId + "&quantity=" + item.qty);
     }
     function firstCheckoutUrl() {
       if (!cart.length) return "";
@@ -1443,7 +1456,7 @@
       if (cart.length <= 1) return firstCheckoutUrl();
       const ids = cart.map((i) => i.cartId).join(",");
       const qtys = cart.map((i) => i.qty).join(",");
-      return STORE + "/?add-to-cart=" + ids + "&quantities=" + qtys;
+      return withUtm(STORE + "/?add-to-cart=" + ids + "&quantities=" + qtys);
     }
 
     function checkoutUrl() {
