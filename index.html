@@ -1066,12 +1066,20 @@
       if (!url) return url;
       const raw = String(url);
       if (!/purepeps\.com\.au/i.test(raw)) return raw;
-      if (/[?&]utm_source=/i.test(raw)) return raw;
-      const hashAt = raw.indexOf("#");
-      const base = hashAt === -1 ? raw : raw.slice(0, hashAt);
-      const hash = hashAt === -1 ? "" : raw.slice(hashAt);
-      const join = base.indexOf("?") === -1 ? "?" : "&";
-      return base + join + "utm_source=telegram&utm_medium=ppa_shop&utm_campaign=telegram_shop" + hash;
+      const tags = { utm_source: "telegram", utm_medium: "mini-app", utm_campaign: "tg-shop" };
+      try {
+        const parsed = new URL(raw);
+        Object.keys(tags).forEach((key) => parsed.searchParams.set(key, tags[key]));
+        // URLSearchParams encodes commas as %2C; keep add-to-cart lists literal.
+        return parsed.toString().replace(/%2C/gi, ",");
+      } catch (e) {
+        if (/[?&]utm_source=/i.test(raw)) return raw;
+        const hashAt = raw.indexOf("#");
+        const base = hashAt === -1 ? raw : raw.slice(0, hashAt);
+        const hash = hashAt === -1 ? "" : raw.slice(hashAt);
+        const join = base.indexOf("?") === -1 ? "?" : "&";
+        return base + join + "utm_source=telegram&utm_medium=mini-app&utm_campaign=tg-shop" + hash;
+      }
     }
 
     function openExternal(url) {
